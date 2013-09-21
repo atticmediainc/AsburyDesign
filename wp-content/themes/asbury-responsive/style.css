@@ -9,3 +9,38 @@ Template:       twentythirteen
 Version:        0.1
 */
 /* Import the parent theme stylesheet */
+/* ------------------------------------- */
+/*     Custom CSS for McCully            */
+/* ------------------------------------- */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+/* ------------------------------------- */
+/*     Header				             */
+/* ------------------------------------- */
+.site-header #header-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.site-header #logo {
+  max-width: 150px;
+}
+.site-header #logo img {
+  width: 100%;
+  height: auto;
+}
+.site-header .navbar {
+  width: 85%;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
