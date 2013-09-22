@@ -10,6 +10,12 @@ Version:        0.1
 */
 /* Import the parent theme stylesheet */
 /* ------------------------------------- */
+/*     Resets for twentythirteen         */
+/* ------------------------------------- */
+ul.nav-menu {
+  padding: 0;
+}
+/* ------------------------------------- */
 /*     Custom CSS for McCully            */
 /* ------------------------------------- */
 .left {
@@ -29,18 +35,98 @@ Version:        0.1
   width: 100%;
   margin: 0 auto;
   position: relative;
+  padding-top: 20px;
+  text-align: center;
 }
 .site-header #logo {
-  max-width: 150px;
+  width: 100%;
 }
 .site-header #logo img {
   width: 100%;
+  max-width: 150px;
   height: auto;
 }
 .site-header .navbar {
-  width: 85%;
+  width: 100%;
   background: white;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  margin-top: 15px;
+  /* Remove caret from mobile menu */
+
 }
+.site-header .navbar .main-navigation {
+  width: 300px;
+}
+.site-header .navbar .nav-menu {
+  display: none;
+}
+.site-header .navbar .menu-toggle {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  padding: 5px 0 5px 13px;
+  width: 300px;
+  text-align: left;
+  background: url('images/menu-dropdown.png') 95% center no-repeat;
+  display: block;
+  font-size: 16px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.site-header .navbar .menu-toggle:after {
+  content: '';
+}
+/* ------------------------------------- */
+/*     Main Content				         */
+/* ------------------------------------- */
+#main #main-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#main #main-container #primary #content article .entry-header {
+  float: left;
+}
+/* ------------------------------------- */
+/*     Responsive				         */
+/* ------------------------------------- */
+@media (min-width: 768px) {
+  .site-header #header-container {
+    width: auto;
+    text-align: left;
+  }
+  .site-header .navbar {
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+  .site-header .navbar .main-navigation {
+    width: auto;
+  }
+  .site-header .navbar .menu-toggle {
+    display: none;
+  }
+  .site-header .navbar .nav-menu {
+    display: block;
+  }
+  #main #main-container {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 980px) {
+  
+}
+@media (min-width: 1024px) {
+  
+}
+/*#primary {
+	
+	#content {
+		
+		article {
+			
+			.entry-header {
+			
+			}
+		}
+	}
+}*/
