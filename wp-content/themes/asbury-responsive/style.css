@@ -360,10 +360,6 @@ body.page-template-page-templatesportfolio-page-php #portfolio-menu li.active-ca
 body.category #portfolio-menu li.active-category a {
   color: #cf4f35;
 }
-body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-project,
-body.category #portfolio-menu .active-project {
-  color: #cf4f35;
-}
 body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
 body.category .portfolio-menu-toggle {
   background-color: transparent;
@@ -469,6 +465,14 @@ body.category .project-popup h3 {
 body.page-template-page-templatesportfolio-page-php .project-popup:hover,
 body.category .project-popup:hover {
   z-index: 1;
+}
+body.page-template-page-templatesportfolio-page-php .fancybox-opened,
+body.category .fancybox-opened {
+  width: 332px !important;
+}
+body.page-template-page-templatesportfolio-page-php .fancybox-inner,
+body.category .fancybox-inner {
+  width: 300px !important;
 }
 /* ------------------------------------- */
 /*     Responsive				         */
@@ -600,6 +604,14 @@ body.category .project-popup:hover {
   body.page-template-page-templatesportfolio-page-php .project.first,
   body.category .project.first {
     margin: 10px 10px 10px 0;
+  }
+  body.page-template-page-templatesportfolio-page-php .fancybox-opened,
+  body.category .fancybox-opened {
+    width: auto !important;
+  }
+  body.page-template-page-templatesportfolio-page-php .fancybox-inner,
+  body.category .fancybox-inner {
+    width: auto !important;
   }
 }
 @media (min-width: 980px) {

@@ -35,6 +35,9 @@ $j(document).ready(function(){
 	});
 	
 	// Setup lightbox for project thumbnails
-	$j('.fancybox').fancybox();
+	$j('.fancybox').fancybox({
+		'autoWidth' : true,
+		'minWidth': 200
+	});
 
 });
