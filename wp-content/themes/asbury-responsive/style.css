@@ -296,6 +296,17 @@ body.home .bx-pager-item a.active {
   background: url('images/featured_nav_on.png') top left no-repeat !important;
 }
 /* Portfolio Page and Portfolio category pages */
+body.page-template-page-templatesportfolio-page-php,
+body.category {
+  /*.fancybox-opened {
+		width: 332px !important;
+	}
+	
+	.fancybox-inner {
+		width: 300px !important;
+	}*/
+
+}
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
   display: none;
@@ -466,14 +477,6 @@ body.page-template-page-templatesportfolio-page-php .project-popup:hover,
 body.category .project-popup:hover {
   z-index: 1;
 }
-body.page-template-page-templatesportfolio-page-php .fancybox-opened,
-body.category .fancybox-opened {
-  width: 332px !important;
-}
-body.page-template-page-templatesportfolio-page-php .fancybox-inner,
-body.category .fancybox-inner {
-  width: 300px !important;
-}
 /* ------------------------------------- */
 /*     Responsive				         */
 /* ------------------------------------- */
@@ -535,6 +538,17 @@ body.category .fancybox-inner {
     display: block;
   }
   /* Portfolio page and category pages */
+  body.page-template-page-templatesportfolio-page-php,
+  body.category {
+    /*.fancybox-opened {
+  			width: auto !important;
+  		}
+  		
+  		.fancybox-inner {
+  			width: auto !important;
+  		}*/
+  
+  }
   body.page-template-page-templatesportfolio-page-php .hentry,
   body.category .hentry {
     padding: 40px 0 0 0;
@@ -604,14 +618,6 @@ body.category .fancybox-inner {
   body.page-template-page-templatesportfolio-page-php .project.first,
   body.category .project.first {
     margin: 10px 10px 10px 0;
-  }
-  body.page-template-page-templatesportfolio-page-php .fancybox-opened,
-  body.category .fancybox-opened {
-    width: auto !important;
-  }
-  body.page-template-page-templatesportfolio-page-php .fancybox-inner,
-  body.category .fancybox-inner {
-    width: auto !important;
   }
 }
 @media (min-width: 980px) {
