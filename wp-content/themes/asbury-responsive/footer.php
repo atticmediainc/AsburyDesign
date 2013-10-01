@@ -14,6 +14,8 @@
 		</div><!-- #main -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div id="icons" class="left">
+				<a href="http://www.facebook.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" alt="" /></a>
+				<a href="http://www.twitter.com"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" alt="" /></a>
 				<a href="mailto:steven@asburydesign.net"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/email.png" alt="" /></a>
 			</div>
 			<div id="footer-contact">
