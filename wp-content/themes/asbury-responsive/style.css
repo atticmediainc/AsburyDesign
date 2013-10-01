@@ -148,6 +148,9 @@ body {
 .hentry {
   padding: 40px 0 0 0;
 }
+#content .entry-content {
+  padding: 0;
+}
 #content .entry-header {
   float: left;
   margin: 0;
@@ -175,11 +178,15 @@ body {
 .entry-content h2 {
   display: inline-block;
   margin: 0 0 20px 0;
-  font-size: 1.4em;
+  font-size: 1.35em;
   font-family: "adobe-caslon-pro", serif;
   color: #cf4f35;
   line-height: 1.4em;
   font-weight: normal;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
 }
 .entry-content a {
   color: #666666;
@@ -211,6 +218,11 @@ body {
   text-align: right;
 }
 .contact-tel {
+  color: #cf4f35;
+  /* targets smartphones that convert telephone to link automatically */
+
+}
+.contact-tel a {
   color: #cf4f35;
 }
 #copyright {
@@ -310,10 +322,6 @@ body.category {
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
   display: none;
-}
-body.page-template-page-templatesportfolio-page-php #content .entry-content,
-body.category #content .entry-content {
-  padding: 0;
 }
 body.page-template-page-templatesportfolio-page-php .hentry,
 body.category .hentry {
