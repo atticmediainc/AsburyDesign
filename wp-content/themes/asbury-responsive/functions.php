@@ -25,6 +25,22 @@
  }
 
 //----------------------------------------------
+//    Load custom .css file on particular page  
+//-----------------------------------------------
+if (!function_exists('navScript')) {
+	function loadCSS() {	
+		if (!is_admin()) {
+
+			if (is_page('portfolio') || is_category()) {
+				wp_register_style( 'fancybox', get_stylesheet_directory_uri() . '/css/jquery.fancybox.css' );
+				wp_enqueue_style( 'fancybox' );
+			}
+		}
+	}
+}
+add_action( 'wp_print_styles', 'loadCSS' );
+
+//----------------------------------------------
 //    Load custom .js file on particular page  
 //-----------------------------------------------
 if (!function_exists('navScript')) {
@@ -37,41 +53,23 @@ if (!function_exists('navScript')) {
 				wp_register_script( 'slider', get_stylesheet_directory_uri() . '/js/slider.js', array( 'jquery' ) );
 				wp_enqueue_script( 'slider' );
 			}
+			
+			if (is_page('portfolio') || is_category()) {
+				wp_register_script( 'fancybox', get_stylesheet_directory_uri() . '/js/jquery.fancybox.pack.js', array( 'jquery' ) );
+				wp_enqueue_script( 'fancybox' );
+				wp_register_script( 'portfolio', get_stylesheet_directory_uri() . '/js/portfolio.js', array( 'jquery' ) );
+				wp_enqueue_script( 'portfolio' );
+				
+			}
 		}
 	}
 }
 add_action( 'wp_enqueue_scripts', 'loadScripts' );
 
 
-function bg_style($image_or_acf, $echo=true) {
-
-  $url = "";
-  
-  if (gettype($image_or_acf) == 'string') {
-    // the function has been passed an ACF field name
-    $imageObj = get_field($image_or_acf);
-    $url = $imageObj['url'];
-    
-  } elseif ( isset($image_or_acf['url']) ){
-    // the function has been passed an image object
-    $url = $image_or_acf['url'];
-  } else {
-    //the function has been passed an attachment source obj
-    $url = $image_or_acf[0];
-  }
-
-/*   console_log(gettype($acf_field), 'acf field type' ); */
-/*   console_log(gettype($imageObj), 'image obj type' ); */
-  $string = 'style="background-image: url(\'' . $url. '\');background-repeat:no-repeat;background-position: center center; background-size:cover;"';
-  
-  if ($echo) {
-    echo $string;
-  } else {
-    return $string;
-  }
-  
-} // end bg_style()
-
+//----------------------------------------------
+//    Set background-image of element  
+//-----------------------------------------------
 function set_slide_bg($feat_image, $echo=true) {
 	$string = 'style="background:url(' . $feat_image . ');background-repeat:no-repeat;background-position: 50% 0%;"';
 	

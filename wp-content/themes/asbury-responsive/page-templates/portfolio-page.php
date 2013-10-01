@@ -29,26 +29,27 @@ get_header(); ?>
 					<div class="entry-content">
 						
 						<div id="portfolio-menu">
+							<h3 class="portfolio-menu-toggle">Toggle</h3>
 							<ul>
 								<?php
 								$args = array(
-								  'orderby' => 'slug',
+								  'orderby' => 'ID',
 								  'order' => 'ASC',
 								  'hide_empty' => 0,
-								  'parent' => 4
+								  'include' => '5,6,7,8,9,10,11'
 								  );
 								$categories = get_categories($args);
 								  $count = 1;
 								  foreach($categories as $category) { 
 								  	if ($count == 1) {
-									    echo "<li id={$category->slug} class='active-project'>{$category->name}</li>";
+									    echo "<li id={$category->slug} class='active-project first'>{$category->name}</li>";
 								    } else { echo "<li id='{$category->slug}'>{$category->name}</li>";  }
 								    $count++;
 								  }
 								?>
 							</ul>
-						</div>
-						
+						</div><!-- #portfolio-menu -->
+						<div class="clear"></div>
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 					</div><!-- .entry-content -->

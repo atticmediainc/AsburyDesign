@@ -73,15 +73,18 @@ body {
 .navbar .menu-toggle {
   background-color: transparent;
   border: 1px solid #dbdbdb;
-  padding: 5px 0 5px 13px;
+  padding: 12px 0 12px 13px;
   width: 300px;
   text-align: left;
   background: url('images/menu-dropdown.png') 95% center no-repeat;
-  display: block;
-  font-size: 16px;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
+  color: #444;
+  display: block;
+  font-family: "din-condensed-web", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .navbar .menu-toggle:after {
   content: '';
@@ -89,10 +92,17 @@ body {
 .nav-menu,
 .toggled-on .nav-menu {
   display: none;
+  border: 1px solid #dbdbdb;
+  border-top: none;
 }
 .nav-menu li,
 .toggled-on .nav-menu li {
   display: block;
+  border-bottom: 1px dotted #828282;
+  margin: 0;
+  padding: 7px 0;
+  text-align: left;
+  background: transparent;
 }
 .nav-menu li a,
 .toggled-on .nav-menu li a {
@@ -100,10 +110,11 @@ body {
   font-size: 1.05em;
   font-style: normal;
   font-weight: normal;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
-  padding: 15px 10px;
+  padding: 5px 10px 5px 12px;
   color: #666666;
+  display: block;
 }
 .nav-menu li:hover > a,
 .toggled-on .nav-menu li:hover > a,
@@ -111,6 +122,10 @@ body {
 .toggled-on .nav-menu li a:hover {
   background: transparent;
   color: #666666;
+}
+.nav-menu li:hover a,
+.toggled-on .nav-menu li:hover a {
+  color: #cf4f35;
 }
 .nav-menu li.current-menu-item a,
 .toggled-on .nav-menu li.current-menu-item a {
@@ -279,12 +294,32 @@ body.home .bx-pager-item a {
 body.home .bx-pager-item a.active {
   background: url('images/featured_nav_on.png') top left no-repeat !important;
 }
-/* Portfolio Page */
-body.page-template-page-templatesportfolio-page-php #portfolio-menu ul {
+/* Portfolio Page and Portfolio category pages */
+body.page-template-page-templatesportfolio-page-php .entry-title,
+body.category .entry-title {
+  margin-bottom: 10px;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu,
+body.category #portfolio-menu {
+  clear: both;
+  margin: 0 auto;
+  max-width: 1080px;
+  min-height: 45px;
+  position: relative;
+  margin-top: 10px;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu ul,
+body.category #portfolio-menu ul,
+body.page-template-page-templatesportfolio-page-php #portfolio-menu .toggled ul,
+body.category #portfolio-menu .toggled ul {
   margin: 0;
   padding: 0;
+  display: none;
+  border: 1px solid #dbdbdb;
+  border-top: none;
 }
-body.page-template-page-templatesportfolio-page-php #portfolio-menu li {
+body.page-template-page-templatesportfolio-page-php #portfolio-menu li,
+body.category #portfolio-menu li {
   float: left;
   margin-right: 50px;
   list-style: none;
@@ -295,11 +330,109 @@ body.page-template-page-templatesportfolio-page-php #portfolio-menu li {
   letter-spacing: 1px;
   cursor: pointer;
 }
-body.page-template-page-templatesportfolio-page-php #portfolio-menu li:hover {
+body.page-template-page-templatesportfolio-page-php #portfolio-menu li:hover,
+body.category #portfolio-menu li:hover {
   color: #cf4f35;
 }
-body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-project {
+body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-project,
+body.category #portfolio-menu .active-project {
   color: #cf4f35;
+}
+body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
+body.category .portfolio-menu-toggle {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  padding: 12px 0 12px 13px;
+  width: 300px;
+  text-align: left;
+  background: url('images/menu-dropdown.png') 95% center no-repeat;
+  margin: 0;
+  cursor: pointer;
+  color: #B4B4B4;
+  display: block;
+  font-family: "din-condensed-web", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul,
+body.category #portfolio-menu.toggled ul {
+  display: block;
+  border: 1px solid #dbdbdb;
+  border-top: none;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li,
+body.category #portfolio-menu.toggled li {
+  border-bottom: 1px dotted #828282;
+  margin: 0;
+  padding: 7px 0;
+  background: transparent;
+  float: none;
+  font-family: "din-condensed-web", Arial, Helvetica, sans-serif;
+  font-size: .85em;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 5px 10px 5px 12px;
+  color: #b4b4b4;
+  display: block;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li:hover,
+body.category #portfolio-menu.toggled li:hover {
+  color: #cf4f35;
+}
+body.page-template-page-templatesportfolio-page-php #project-container,
+body.category #project-container {
+  margin-top: 10px;
+}
+body.page-template-page-templatesportfolio-page-php .project,
+body.category .project {
+  width: 250px;
+  height: 200px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+body.page-template-page-templatesportfolio-page-php .project.first,
+body.category .project.first {
+  margin: 10px 10px 10px 0;
+}
+body.page-template-page-templatesportfolio-page-php .project-thumb,
+body.category .project-thumb {
+  z-index: 1;
+  position: absolute;
+}
+body.page-template-page-templatesportfolio-page-php .project-thumb:hover,
+body.category .project-thumb:hover {
+  z-index: 0;
+}
+body.page-template-page-templatesportfolio-page-php .project-popup,
+body.category .project-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  padding-top: 80px;
+  text-align: center;
+  background: url('images/featured-work-title-bg.png') top left no-repeat;
+  z-index: 0;
+  cursor: pointer;
+}
+body.page-template-page-templatesportfolio-page-php .project-popup h3,
+body.category .project-popup h3 {
+  font-family: "adobe-caslon-pro", sans-serif;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 0 5px 0;
+  letter-spacing: 1px;
+  color: #fff;
+}
+body.page-template-page-templatesportfolio-page-php .project-popup:hover,
+body.category .project-popup:hover {
+  z-index: 1;
 }
 /* ------------------------------------- */
 /*     Responsive				         */
@@ -327,9 +460,12 @@ body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-proj
   }
   .navbar .nav-menu {
     display: block;
+    border: none;
   }
   .navbar .nav-menu li {
     display: inline-block;
+    border: none;
+    padding: 7px 6px;
   }
   .navbar .nav-menu li:last-of-type a {
     padding: 15px 0 15px 10px;
@@ -357,6 +493,54 @@ body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-proj
   }
   body.home .bx-controls {
     display: block;
+  }
+  /* Portfolio page and category pages */
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu,
+  body.category #portfolio-menu,
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled,
+  body.category #portfolio-menu.toggled {
+    margin-top: 10px;
+  }
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu ul,
+  body.category #portfolio-menu ul,
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul,
+  body.category #portfolio-menu.toggled ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: none;
+  }
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu li,
+  body.category #portfolio-menu li,
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li,
+  body.category #portfolio-menu.toggled li {
+    float: left;
+    margin-right: 50px;
+    list-style: none;
+    font-family: "din-condensed-web", serif;
+    font-size: .85em;
+    color: #b4b4b4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+  }
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu li:hover,
+  body.category #portfolio-menu li:hover,
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li:hover,
+  body.category #portfolio-menu.toggled li:hover {
+    color: #cf4f35;
+  }
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-project,
+  body.category #portfolio-menu .active-project,
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled .active-project,
+  body.category #portfolio-menu.toggled .active-project {
+    color: #cf4f35;
+  }
+  body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
+  body.category .portfolio-menu-toggle {
+    display: none;
   }
 }
 @media (min-width: 980px) {
