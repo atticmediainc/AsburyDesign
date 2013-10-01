@@ -10,11 +10,10 @@
  */
 
 get_header(); ?>
-
 <div id="main-container">
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-
+		
 		<?php if ( have_posts() ) : ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
@@ -23,7 +22,10 @@ get_header(); ?>
 				
 				<div class="entry-content">
 					
+					<p id="current-page"><?php $current = single_cat_title("", false); echo strtolower($current); ?></p>  
+
 					<div id="portfolio-menu">
+						<h3 class="portfolio-menu-toggle">Toggle</h3>
 						<ul>
 							<?php
 							$args = array(
@@ -35,10 +37,11 @@ get_header(); ?>
 							$categories = get_categories($args);
 							  $count = 1;
 							  foreach($categories as $category) { 
-							  	if ($count == 1) {
-								    echo "<li id={$category->slug} class='active-project first'>{$category->name}</li>";
-							    } else { echo "<li id='{$category->slug}'>{$category->name}</li>";  }
-							    $count++;
+							  	$cat_url = site_url() . '/portfolio/' . $category->slug;
+							  		if ($count == 1) {
+							  	    echo "<li id={$category->slug} class='active-project first'><a href='{$cat_url}'>{$category->name}</a></li>";
+							  	} else { echo "<li id='{$category->slug}'><a href='{$cat_url}'>{$category->name}</a></li>";  }
+							  	$count++;
 							  }
 							?>
 						</ul>

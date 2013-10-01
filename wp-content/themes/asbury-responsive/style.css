@@ -148,9 +148,10 @@ body {
 .hentry {
   padding: 40px 0 0 0;
 }
-.entry-header {
+#content .entry-header {
   float: left;
   margin: 0;
+  padding: 0;
 }
 .entry-thumbnail {
   float: left;
@@ -295,6 +296,18 @@ body.home .bx-pager-item a.active {
   background: url('images/featured_nav_on.png') top left no-repeat !important;
 }
 /* Portfolio Page and Portfolio category pages */
+body.page-template-page-templatesportfolio-page-php #current-page,
+body.category #current-page {
+  display: none;
+}
+body.page-template-page-templatesportfolio-page-php #content .entry-content,
+body.category #content .entry-content {
+  padding: 0;
+}
+body.page-template-page-templatesportfolio-page-php .hentry,
+body.category .hentry {
+  padding: 20px 0 0 0;
+}
 body.page-template-page-templatesportfolio-page-php .entry-title,
 body.category .entry-title {
   margin-bottom: 10px;
@@ -323,15 +336,28 @@ body.category #portfolio-menu li {
   float: left;
   margin-right: 50px;
   list-style: none;
+  cursor: pointer;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu li a,
+body.category #portfolio-menu li a {
   font-family: "din-condensed-web", serif;
-  font-size: .85em;
+  font-size: 1em;
+  font-weight: normal;
   color: #b4b4b4;
   text-transform: uppercase;
   letter-spacing: 1px;
-  cursor: pointer;
+  text-decoration: none;
 }
-body.page-template-page-templatesportfolio-page-php #portfolio-menu li:hover,
-body.category #portfolio-menu li:hover {
+body.page-template-page-templatesportfolio-page-php #portfolio-menu li a:hover,
+body.category #portfolio-menu li a:hover {
+  color: #cf4f35;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu li.first a,
+body.category #portfolio-menu li.first a {
+  padding: 0px;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu li.active-category a,
+body.category #portfolio-menu li.active-category a {
   color: #cf4f35;
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-project,
@@ -363,11 +389,16 @@ body.category #portfolio-menu.toggled ul {
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li,
 body.category #portfolio-menu.toggled li {
+  display: block;
   border-bottom: 1px dotted #828282;
   margin: 0;
   padding: 7px 0;
+  text-align: left;
   background: transparent;
   float: none;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a,
+body.category #portfolio-menu.toggled li a {
   font-family: "din-condensed-web", Arial, Helvetica, sans-serif;
   font-size: .85em;
   font-style: normal;
@@ -377,26 +408,31 @@ body.category #portfolio-menu.toggled li {
   padding: 5px 10px 5px 12px;
   color: #b4b4b4;
   display: block;
+  text-decoration: none;
 }
-body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li:hover,
-body.category #portfolio-menu.toggled li:hover {
+body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a:hover,
+body.category #portfolio-menu.toggled li a:hover {
+  color: #cf4f35;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li.active-category a,
+body.category #portfolio-menu.toggled li.active-category a {
   color: #cf4f35;
 }
 body.page-template-page-templatesportfolio-page-php #project-container,
 body.category #project-container {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 body.page-template-page-templatesportfolio-page-php .project,
 body.category .project {
   width: 250px;
   height: 200px;
-  display: inline-block;
-  margin: 10px;
+  display: block;
+  margin: 20px auto;
   position: relative;
 }
 body.page-template-page-templatesportfolio-page-php .project.first,
 body.category .project.first {
-  margin: 10px 10px 10px 0;
+  margin: 20px auto;
 }
 body.page-template-page-templatesportfolio-page-php .project-thumb,
 body.category .project-thumb {
@@ -495,6 +531,10 @@ body.category .project-popup:hover {
     display: block;
   }
   /* Portfolio page and category pages */
+  body.page-template-page-templatesportfolio-page-php .hentry,
+  body.category .hentry {
+    padding: 40px 0 0 0;
+  }
   body.page-template-page-templatesportfolio-page-php #portfolio-menu,
   body.category #portfolio-menu,
   body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled,
@@ -517,19 +557,25 @@ body.category .project-popup:hover {
     float: left;
     margin-right: 50px;
     list-style: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+  }
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu li a,
+  body.category #portfolio-menu li a,
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a,
+  body.category #portfolio-menu.toggled li a {
     font-family: "din-condensed-web", serif;
     font-size: .85em;
     color: #b4b4b4;
     text-transform: uppercase;
     letter-spacing: 1px;
-    cursor: pointer;
-    border: none;
     padding: 0;
   }
-  body.page-template-page-templatesportfolio-page-php #portfolio-menu li:hover,
-  body.category #portfolio-menu li:hover,
-  body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li:hover,
-  body.category #portfolio-menu.toggled li:hover {
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu li a:hover,
+  body.category #portfolio-menu li a:hover,
+  body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a:hover,
+  body.category #portfolio-menu.toggled li a:hover {
     color: #cf4f35;
   }
   body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-project,
@@ -541,6 +587,19 @@ body.category .project-popup:hover {
   body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
   body.category .portfolio-menu-toggle {
     display: none;
+  }
+  body.page-template-page-templatesportfolio-page-php #project-container,
+  body.category #project-container {
+    margin-top: 10px;
+  }
+  body.page-template-page-templatesportfolio-page-php .project,
+  body.category .project {
+    display: inline-block;
+    margin: 10px;
+  }
+  body.page-template-page-templatesportfolio-page-php .project.first,
+  body.category .project.first {
+    margin: 10px 10px 10px 0;
   }
 }
 @media (min-width: 980px) {
@@ -566,8 +625,19 @@ body.category .project-popup:hover {
     bottom: 40px;
   }
 }
-@media (min-width: 1024px) {
-  
+@media (min-width: 1080px) {
+  .wrap {
+    width: 1040px;
+  }
+  .site-header #header-container {
+    max-width: 1040px;
+  }
+  #main #main-container {
+    max-width: 1040px;
+  }
+  .site-footer {
+    max-width: 1040px;
+  }
 }
 /*#primary {
 	
