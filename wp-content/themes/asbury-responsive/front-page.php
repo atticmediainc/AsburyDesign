@@ -19,17 +19,21 @@ get_header(); ?>
 						<!-- Get slide image -->
 						<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 						
-						<!-- Construct URL using custom field value -->
-						<?php $link_field = get_post_meta(get_the_ID(), 'slideshow_link', true); ?>
-						<?php $link = site_url() . "/" . $link_field; ?>
-						
+						<!-- Construct URL using ACF select field -->
+						<?php
+						$field = get_field_object('project_type');
+						$value = get_field('project_type');
+						$label = $field['choices'][ $value ];
+						$link = site_url() . '/portfolio/' . $value;
+						?>
+
 						<!-- Get the project type from custom field value -->
 						<?php $project_field = get_post_meta(get_the_ID(), 'slideshow_project', true); ?>
 						
 						<div class="slider-img" <?php set_slide_bg($feat_image); ?>>
 							<div class="wrap">
 								<div class="slide-content">
-									<a href="<?php echo $link; ?>"><?php echo $project_field; ?> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider-content-arrow.png" alt="" title="" class="slide-title-arrow"></a>
+									<a href="<?php echo $link; ?>"><?php echo $label; ?> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider-content-arrow.png" alt="" title="" class="slide-title-arrow"></a>
 									<p><?php the_title(); ?></p>
 								</div>
 							</div>

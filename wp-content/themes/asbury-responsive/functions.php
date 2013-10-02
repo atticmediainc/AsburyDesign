@@ -70,6 +70,10 @@ add_action( 'wp_enqueue_scripts', 'loadScripts' );
 //----------------------------------------------
 //    Set background-image of element  
 //-----------------------------------------------
+// Example usage:
+// $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+// <div class="slider-img" <?php set_slide_bg($feat_image); [php closing tag]>
+
 function set_slide_bg($feat_image, $echo=true) {
 	$string = 'style="background:url(' . $feat_image . ');background-repeat:no-repeat;background-position: 50% 0%;"';
 	
