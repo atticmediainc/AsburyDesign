@@ -32,7 +32,7 @@ get_header(); ?>
 							  'orderby' => 'ID',
 							  'order' => 'ASC',
 							  'hide_empty' => 0,
-							  'include' => '5,6,7,8,9,10,11'
+							  'include' => '5,6,7,8,9,10,11,12'
 							  );
 							$categories = get_categories($args);
 							  $count = 1;
@@ -56,8 +56,13 @@ get_header(); ?>
 							<?php $featured_id = get_post_thumbnail_id(); ?>
 							<?php $featured_url = wp_get_attachment_image_src($featured_id,'full', true); ?>
 							
-							<!-- set featured image as target for fancybox, display thumbnail with content on hover -->
+							<!-- if a video project link to vimeo URL -->
+							<?php if (in_category(12)) : ?>
+							<a href="<?php the_field('vimeo_url'); ?>" class="fancybox">
+							<?php else : ?>
+							<!-- otherwise set featured image as target for fancybox -->
 							<a href="<?php echo $featured_url[0]; ?>" class="fancybox">
+							<?php endif; ?>
 								<div <?php echo ($count == 1 ? 'class="project first"' : 'class="project"'); ?>>
 									<div class="project-thumb"><img src="<?php the_field('portfolio_thumbnail'); ?>" alt="" /></div>
 									<div class="project-popup">

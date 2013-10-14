@@ -46,5 +46,13 @@ get_header(); ?>
 	</div><!-- /slideshow-container -->
 </div><!-- /slideshow-wrapper -->
 
+<div id="main-container">
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+			<?php the_content(); ?>
+		</div><!-- #content -->
+	</div><!-- #primary -->
+</div><!-- #main-container -->
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

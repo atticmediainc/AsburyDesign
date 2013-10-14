@@ -34,9 +34,6 @@ ul.nav-menu {
 
 body {
 	background-color: #FFFFFF;
-	background-image: url('images/background.png');
-	background-repeat: repeat;
-	background-position: left top;
 }
 
 .site {
@@ -60,7 +57,6 @@ body {
 		width: 100%;
 		margin: 0 auto;
 		position: relative;
-		padding-top: 20px;
 		text-align: center;
 	}
 	
@@ -118,31 +114,32 @@ body {
 		background: transparent;
 		
 		a {
-			font-family: "din-condensed-web", Arial, Helvetica, sans-serif;
-			font-size: 1.05em;
+			font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+			letter-spacing: 1px;
+			font-size: 1em;
 			font-style: normal;
 			font-weight: normal;
 			text-align: left;
 			text-transform: uppercase;
 			padding: 5px 10px 5px 12px;
-			color: rgb(102, 102, 102);
+			color: #555555;
 			display: block;
 		}
 	}
 	
 	li:hover > a, li a:hover {
 		background: transparent;
-		color: rgb(102, 102, 102);
+		color: #CC0000;
 	}
 	
 	li:hover a {
-		color: #cf4f35;
+		color: #CC0000;
 	}
 	
 	li.current-menu-item {
 		
 		a {
-			color: #cf4f35;
+			color: #CC0000;
 			font-style: normal;
 		}
 	}
@@ -185,10 +182,11 @@ body {
 }
 
 .entry-title {
-	color: #cf4f35;
-	font-family: "din-condensed-web", Arial, sans-serif;
-	font-size: 1.6em;
-	font-weight: bold;
+	color: #cc0000;
+	font-family: "franklin-gothic-urw-cond", Arial, sans-serif;
+	font-size: 25px;
+	letter-spacing: 1px;
+	font-weight: 700;
 	line-height: 1.2em;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -206,7 +204,7 @@ body {
 		margin: 0 0 20px 0;
 		font-size: 1.35em;
 		font-family: "adobe-caslon-pro", serif;
-		color: #cf4f35;
+		color: #cc0000;
 		line-height: 1.4em;
 		font-weight: normal;
 		word-wrap: break-word;
@@ -248,26 +246,27 @@ body {
 }
 
 #footer-contact {
-	font-family: "din-condensed-web", Arial, sans-serif;
-	font-size: 1.15em;
-	line-height: 1.45em;
+	font-family: "adobe-garamond-pro", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
 	text-align: right;
+	color: #555555;
 }
 
 .contact-tel {
-	color: #cf4f35;
+	color: #cc0000;
 	
 	/* targets smartphones that convert telephone to link automatically */
 	a {
-		color: #cf4f35;
+		color: #cc0000;
 	}
 }
 
 #copyright {
-	font-family: "din-condensed-web", Arial, sans-serif;
-	font-size: .95em;
+	font-family: "adobe-garamond-pro", Arial, sans-serif;
+	font-size: 15px;
 	text-align: right;
-	color: #cacdcc;
+	color: #555555;
 	margin: 5px 0;
 }
 
@@ -283,7 +282,7 @@ body.home {
 	}
 	
 	#slideshow-wrapper {
-		background: url('images/home-shadow.png') top left repeat-x;
+		background: #EEEEE0 url('images/home-shadow.png') top left repeat-x;
 	}
 	
 	.slider-img {
@@ -363,6 +362,20 @@ body.home {
 		    background: url('images/featured_nav_on.png') top left no-repeat !important;
 		}
 	}
+	
+	.site-content {
+		font-family: "adobe-garamond-pro";
+				
+		h2 {
+			color: #cc0000;
+			margin-bottom: 10px;
+			font-size: 25px;
+		}
+		
+		p {
+			font-size: 22px;
+		}
+	}
 }
 
 /* Portfolio Page and Portfolio category pages */
@@ -399,7 +412,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 		
 		li {
 			float: left;
-			margin-right: 50px;
+			margin-right: 47px;
 			list-style: none;
 			cursor: pointer;
 			
@@ -414,7 +427,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 			}
 			
 			a:hover {
-				color: #cf4f35;
+				color: #cc0000;
 			}
 		}
 		
@@ -423,7 +436,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 		}
 		
 		li.active-category a {
-			color: #cf4f35;
+			color: #cc0000;
 		}
 	}
 	
@@ -475,12 +488,12 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 			}
 			
 			a:hover {
-				color: #cf4f35;
+				color: #cc0000;
 			}
 		}
 		
 		li.active-category a {
-			color: #cf4f35;
+			color: #cc0000;
 		}
 	}
 	
@@ -522,9 +535,8 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 		cursor: pointer;
 		
 		h3 {
-			font-family: "adobe-caslon-pro", sans-serif;
+			font-family: "adobe-garamond-pro", sans-serif;
 			font-size: 1.1em;
-			font-style: italic;
 			font-weight: normal;
 			margin: 0 0 5px 0;
 			letter-spacing: 1px;
@@ -560,6 +572,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 	}
 	
 	.site-header {
+		height: 175px;
 		
 		#header-container {
 			max-width: 700px;
@@ -568,7 +581,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 	}
 	
 	.navbar {
-		width: auto;
+		width: 430px;
 		position: absolute;
 		bottom: -18px;
 		right: 0;
@@ -654,7 +667,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 			
 			li {
 				float: left;
-				margin-right: 50px;
+				margin-right: 47px;
 				list-style: none;
 				cursor: pointer;
 				border: none;
@@ -670,12 +683,12 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 				}
 				
 				a:hover {
-					color: #cf4f35;
+					color: #cc0000;
 				}
 			}
 			
 			.active-project {
-				color: #cf4f35;
+				color: #cc0000;
 			}
 		}
 		
@@ -719,6 +732,10 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 		}
 	}
 	
+	.navbar {
+		width: auto;
+	}
+	
 	#main {
 		
 		#main-container {
@@ -734,9 +751,9 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 	body.home {
 		
 		.slider-img {
-			background-size: 1500px 450px !important;
+			background-size: 1500px 500px !important;
 			width: 100% !important;
-			height: 450px;
+			height: 500px;
 			
 			.slide-content {
 				bottom: 40px;
@@ -756,17 +773,31 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 		#header-container {
 			max-width: 1040px;
 		}
+		
+		#logo {
+			padding-left: 150px;
+		}
 	}
 	
 	#main {
 		
 		#main-container {
-			max-width: 1040px;
+			max-width: 1200px;
+		}
+		
+		#primary {
+			width: 1000px;
+			margin: 0 auto;
 		}
 	}
 	
 	.site-footer {
-		max-width: 1040px;
+		max-width: 1200px;
+	}
+	
+	.footer-container {
+		width: 1000px;
+		margin: 0 auto;
 	}
 }
 

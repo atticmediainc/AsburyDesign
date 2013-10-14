@@ -36,7 +36,7 @@ get_header(); ?>
 								  'orderby' => 'ID',
 								  'order' => 'ASC',
 								  'hide_empty' => 0,
-								  'include' => '5,6,7,8,9,10,11'
+								  'include' => '5,6,7,8,9,10,11,12'
 								  );
 								$categories = get_categories($args);
 								  $count = 1;

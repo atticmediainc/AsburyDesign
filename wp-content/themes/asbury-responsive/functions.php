@@ -57,6 +57,8 @@ if (!function_exists('navScript')) {
 			if (is_page('portfolio') || is_category()) {
 				wp_register_script( 'fancybox', get_stylesheet_directory_uri() . '/js/jquery.fancybox.pack.js', array( 'jquery' ) );
 				wp_enqueue_script( 'fancybox' );
+				wp_register_script( 'fancybox-helpers', get_stylesheet_directory_uri() . '/js/jquery.fancybox-media.js', array( 'jquery' ) );
+				wp_enqueue_script( 'fancybox-helpers' );
 				wp_register_script( 'portfolio', get_stylesheet_directory_uri() . '/js/portfolio.js', array( 'jquery' ) );
 				wp_enqueue_script( 'portfolio' );
 				

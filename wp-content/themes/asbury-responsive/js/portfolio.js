@@ -26,6 +26,9 @@ $j(document).ready(function(){
 			break;
 		case 'interiors':
 			current_link = "interiors";
+			break;
+		case 'video':
+			current_link = "video";
 	}
 	$j('#' + current_link).addClass('active-category'); // add .active-category to the appropriate link
 	
@@ -37,7 +40,10 @@ $j(document).ready(function(){
 	// Setup lightbox for project thumbnails
 	$j('.fancybox').fancybox({
 		'autoWidth' : true,
-		'minWidth': 200
+		'minWidth': 200,
+		helpers: {
+	        media: {}
+        }
 	});
 
 });
