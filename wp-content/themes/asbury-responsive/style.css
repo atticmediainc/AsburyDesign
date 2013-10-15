@@ -108,7 +108,7 @@ body {
 .toggled-on .nav-menu li a {
   font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
-  font-size: 1em;
+  font-size: 15px;
   font-style: normal;
   font-weight: normal;
   text-align: left;
@@ -166,19 +166,20 @@ body {
 }
 .entry-title {
   color: #cc0000;
-  font-family: "franklin-gothic-urw-cond", Arial, sans-serif;
-  font-size: 25px;
+  font-family: "adobe-garamond-pro", Arial, sans-serif;
+  font-size: 50px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.2em;
   margin-bottom: 10px;
   text-transform: uppercase;
   margin-bottom: 25px;
   padding-bottom: 15px;
   border-bottom: 1px solid #d5d5d5;
+  text-transform: none;
 }
 .entry-content {
-  font-family: "adobe-caslon-pro", serif;
+  font-family: "garamond-premier-pro-display", serif;
   font-size: 1.1em;
 }
 .entry-content h2 {
@@ -209,6 +210,7 @@ body {
   border-top: 1px solid #D5D5D5;
   padding-top: 20px;
   background: none;
+  border-top: none;
 }
 #icons a {
   margin-right: 10px;
@@ -234,7 +236,7 @@ body {
 }
 #copyright {
   font-family: "adobe-garamond-pro", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   text-align: right;
   color: #555555;
   margin: 5px 0;
@@ -315,15 +317,21 @@ body.home .bx-pager-item a.active {
   background: url('images/featured_nav_on.png') top left no-repeat !important;
 }
 body.home .site-content {
-  font-family: "adobe-garamond-pro";
+  font-family: "garamond-premier-pro-display", "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  color: #555555;
 }
 body.home .site-content h2 {
   color: #cc0000;
   margin-bottom: 10px;
   font-size: 25px;
+  font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
 body.home .site-content p {
-  font-size: 22px;
+  font-size: 21px;
 }
 /* Portfolio Page and Portfolio category pages */
 body.page-template-page-templatesportfolio-page-php,
@@ -538,6 +546,9 @@ body.category .project-popup:hover {
     border: none;
     padding: 7px 6px;
   }
+  .navbar .nav-menu li:last-of-type {
+    padding: 7px 0 7px 6px;
+  }
   .navbar .nav-menu li:last-of-type a {
     padding: 15px 0 15px 10px;
   }
@@ -679,10 +690,10 @@ body.category .project-popup:hover {
     width: 1040px;
   }
   .site-header #header-container {
-    max-width: 1040px;
+    max-width: 1000px;
   }
   .site-header #logo {
-    padding-left: 150px;
+    padding-left: 50px;
   }
   #main #main-container {
     max-width: 1200px;
