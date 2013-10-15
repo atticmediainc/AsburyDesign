@@ -27,6 +27,7 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
+						<div id="portfolio-content"><?php the_content(); ?></div>
 						
 						<div id="portfolio-menu">
 							<h3 class="portfolio-menu-toggle">Toggle</h3>

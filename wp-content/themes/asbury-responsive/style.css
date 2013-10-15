@@ -180,7 +180,7 @@ body {
 }
 .entry-content {
   font-family: "garamond-premier-pro-display", serif;
-  font-size: 1.1em;
+  font-size: 20px;
 }
 .entry-content h2 {
   display: inline-block;
@@ -623,7 +623,7 @@ body.category .project-popup:hover {
   body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a,
   body.category #portfolio-menu.toggled li a {
     font-family: "din-condensed-web", serif;
-    font-size: .85em;
+    font-size: 15px;
     color: #b4b4b4;
     text-transform: uppercase;
     letter-spacing: 1px;
