@@ -51,7 +51,11 @@ get_header(); ?>
 					<div id="project-container">
 						<?php $count = 1; ?>
 						<?php /* The loop */ ?>
-						<?php while ( have_posts() ) : the_post(); ?>
+						<?php $currentCategory = single_cat_title("", false); ?>
+						<?php $loop =  new WP_Query( array(
+						    					'category_name' => $currentCategory,
+						    					'posts_per_page' => -1 ) ); ?>
+						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 							
 							<?php // get url of featured image ?>
 							<?php $featured_id = get_post_thumbnail_id(); ?>
@@ -74,6 +78,7 @@ get_header(); ?>
 							<?php $count++; ?>
 							
 						<?php endwhile; ?>
+						<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>  
 					</div><!-- #project-container -->
 			<?php twentythirteen_paging_nav(); ?>
 					
