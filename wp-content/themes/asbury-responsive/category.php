@@ -80,7 +80,6 @@ get_header(); ?>
 						<?php endwhile; ?>
 						<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>  
 					</div><!-- #project-container -->
-			<?php twentythirteen_paging_nav(); ?>
 					
 		<?php else : ?>
 			<?php get_template_part( 'content', 'none' ); ?>
