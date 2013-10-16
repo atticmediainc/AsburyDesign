@@ -21,6 +21,7 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 				
 				<div class="entry-content">
+					<div id="portfolio-content">Our work covers the complete range of advertising, branding, and design. We’re known for our award-winning visuals, but our focus is on communication and strategic positioning.</div>
 					
 					<p id="current-page"><?php $current = single_cat_title("", false); echo strtolower($current); ?></p>  
 

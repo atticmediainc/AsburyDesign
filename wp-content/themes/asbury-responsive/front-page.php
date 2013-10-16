@@ -33,7 +33,7 @@ get_header(); ?>
 						<div class="slider-img" <?php set_slide_bg($feat_image); ?>>
 							<div class="wrap">
 								<div class="slide-content">
-									<a href="<?php echo $link; ?>"><?php echo $label; ?> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/slider-content-arrow.png" alt="" title="" class="slide-title-arrow"></a>
+									<a href="<?php echo $link; ?>"><?php echo $label; ?></a>
 									<p><?php the_title(); ?></p>
 								</div>
 							</div>
