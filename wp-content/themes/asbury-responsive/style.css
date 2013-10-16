@@ -663,7 +663,7 @@ body.category .project-popup:hover {
   body.page-template-page-templatesportfolio-page-php .project,
   body.category .project {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 3px;
   }
   body.page-template-page-templatesportfolio-page-php .project.first,
   body.category .project.first {
