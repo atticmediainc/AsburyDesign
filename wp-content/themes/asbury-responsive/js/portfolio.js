@@ -15,7 +15,7 @@ $j(document).ready(function(){
 		case 'advertising':
 			current_link = "advertising";
 			break;
-		case 'branding & corporate identity':
+		case 'branding':
 			current_link = "branding";
 			break;
 		case 'websites':

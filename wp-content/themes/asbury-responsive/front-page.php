@@ -11,7 +11,8 @@ get_header(); ?>
 			<div class="bxslider">
 				<?php $loop = new WP_Query( array( 
 											'category_name' => 'slideshow-image', 
-											'orderby' => 'title', 
+											'meta_key'		=> 'slide_order',
+											'orderby'		=> 'meta_value_num', 
 											'order' => 'ASC' ) ); ?>
 				
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -32,10 +33,10 @@ get_header(); ?>
 						
 						<div class="slider-img" <?php set_slide_bg($feat_image); ?>>
 							<div class="wrap">
-								<div class="slide-content">
-									<a href="<?php echo $link; ?>"><?php echo $label; ?></a>
+								<a href="<?php echo $link; ?>"><div class="slide-content">
+									<h4><?php echo $label; ?></h4>
 									<p><?php the_title(); ?></p>
-								</div>
+								</div></a>
 							</div>
 						</div>
 					</div>

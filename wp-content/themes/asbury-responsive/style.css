@@ -271,15 +271,13 @@ body.home .slider-img .slide-content {
   height: 100px;
   text-align: left;
 }
-body.home .slider-img .slide-content a {
+body.home .slider-img .slide-content h4 {
   font-size: 15px;
   color: #fff;
   font-family: "franklin-gothic-urw-cond", Arial, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-}
-body.home .slider-img .slide-content a:hover {
-  text-decoration: underline;
+  margin: 7px 0 0 0;
 }
 body.home .slider-img .slide-content .slide-title-arrow {
   margin-left: 10px;
@@ -511,7 +509,7 @@ body.category .project-popup {
 body.page-template-page-templatesportfolio-page-php .project-popup h3,
 body.category .project-popup h3 {
   font-family: "adobe-garamond-pro", sans-serif;
-  font-size: 1.1em;
+  font-size: 22px;
   font-weight: normal;
   margin: 0 0 5px 0;
   letter-spacing: 1px;
@@ -520,6 +518,13 @@ body.category .project-popup h3 {
 body.page-template-page-templatesportfolio-page-php .project-popup:hover,
 body.category .project-popup:hover {
   z-index: 1;
+}
+/* Services Page */
+body.page-id-10 #content .entry-content {
+  font-size: 22px;
+}
+body.page-id-10 p {
+  margin: 0 0 15px;
 }
 /* ------------------------------------- */
 /*     Responsive				         */

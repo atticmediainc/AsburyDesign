@@ -43,8 +43,10 @@ get_header(); ?>
 								  $count = 1;
 								  foreach($categories as $category) { 
 								  	$cat_url = site_url() . '/portfolio/' . $category->slug;
-								  	if ($count == 1) {
+								  	if ($category->slug == "advertising") {
 									    echo "<li id={$category->slug} class='active-category first'><a href='{$cat_url}'>{$category->name}</a></li>";
+								    } elseif ($category->slug == "branding") {
+								    	echo "<li id='{$category->slug}'><a href='{$cat_url}'>{$category->name} & Corporate Identity</a></li>";
 								    } else { echo "<li id='{$category->slug}'><a href='{$cat_url}'>{$category->name}</a></li>";  }
 								    $count++;
 								  }
@@ -55,7 +57,7 @@ get_header(); ?>
 						<!-- Show only Publication projects on the Portfolio page -->
 						<div id="project-container">
 							<?php $count = 1; ?>
-							<?php $loop = new WP_Query( array( 'category_name' => 'publication', 'posts_per_page' => -1 ) ); ?>
+							<?php $loop = new WP_Query( array( 'category_name' => 'advertising', 'posts_per_page' => -1 ) ); ?>
 
 							<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 								<?php // get url of featured image ?>

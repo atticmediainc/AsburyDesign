@@ -41,6 +41,8 @@ get_header(); ?>
 							  	$cat_url = site_url() . '/portfolio/' . $category->slug;
 							  		if ($count == 1) {
 							  	    echo "<li id={$category->slug} class='active-project first'><a href='{$cat_url}'>{$category->name}</a></li>";
+							  	} elseif ($category->slug == "branding") {
+							  		echo "<li id='{$category->slug}'><a href='{$cat_url}'>{$category->name} & Corporate Identity</a></li>";
 							  	} else { echo "<li id='{$category->slug}'><a href='{$cat_url}'>{$category->name}</a></li>";  }
 							  	$count++;
 							  }
