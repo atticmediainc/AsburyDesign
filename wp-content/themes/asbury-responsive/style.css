@@ -668,6 +668,7 @@ body.page-id-10 p {
   body.page-template-page-templatesportfolio-page-php .project,
   body.category .project {
     display: inline-block;
+    float: left;
     margin: 10px 3px;
   }
   body.page-template-page-templatesportfolio-page-php .project.first,
