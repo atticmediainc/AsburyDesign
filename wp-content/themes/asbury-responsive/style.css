@@ -519,6 +519,10 @@ body.page-template-page-templatesportfolio-page-php .project-popup:hover,
 body.category .project-popup:hover {
   z-index: 1;
 }
+body.page-template-page-templatesportfolio-page-php .fancybox-overlay,
+body.category .fancybox-overlay {
+  background: url('images/fancybox_overlay.png') top left repeat !important;
+}
 /* Services Page */
 body.page-id-10 #content .entry-content {
   font-size: 22px;

@@ -41,6 +41,7 @@ $j(document).ready(function(){
 	$j('.fancybox').fancybox({
 		'autoWidth' : true,
 		'minWidth': 200,
+		'padding': 0,
 		helpers: {
 	        media: {}
         }
