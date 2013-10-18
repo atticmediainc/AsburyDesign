@@ -34,10 +34,10 @@ get_header(); ?>
 							<ul>
 								<?php
 								$args = array(
-								  'orderby' => 'ID',
-								  'order' => 'ASC',
+								  //'orderby' => 'ID',
+								  //'order' => 'DESC',
 								  'hide_empty' => 0,
-								  'include' => '5,6,7,8,9,10,11,12'
+								  'include' => '7,5,6,8,9,10,11,12'
 								  );
 								$categories = get_categories($args);
 								  $count = 1;
