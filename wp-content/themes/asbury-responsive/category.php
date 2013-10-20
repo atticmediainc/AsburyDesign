@@ -28,25 +28,27 @@ get_header(); ?>
 					<div id="portfolio-menu">
 						<h3 class="portfolio-menu-toggle">Toggle</h3>
 						<ul>
-							<?php
-							$args = array(
-							  'orderby' => 'ID',
-							  'order' => 'ASC',
-							  'hide_empty' => 0,
-							  'include' => '5,6,7,8,9,10,11,12'
-							  );
-							$categories = get_categories($args);
-							  $count = 1;
-							  foreach($categories as $category) { 
-							  	$cat_url = site_url() . '/portfolio/' . $category->slug;
-							  		if ($count == 1) {
-							  	    echo "<li id={$category->slug} class='active-project first'><a href='{$cat_url}'>{$category->name}</a></li>";
-							  	} elseif ($category->slug == "branding") {
-							  		echo "<li id='{$category->slug}'><a href='{$cat_url}'>{$category->name} & Corporate Identity</a></li>";
-							  	} else { echo "<li id='{$category->slug}'><a href='{$cat_url}'>{$category->name}</a></li>";  }
-							  	$count++;
-							  }
-							?>
+							<?php $loop = new WP_Query( array( 'category_name' => 'project-category', 
+															'posts_per_page' => -1,
+															'meta_key'		=> 'category_menu_order',
+															'orderby'		=> 'meta_value_num',
+															'order' => 'ASC'
+							) ); ?>
+							
+							<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+								<?php $cat_name = strtolower($post->post_name); ?>
+								<?php $cat_url = site_url() . '/portfolio/' . $cat_name; ?>
+								<?php $order = get_field( "category_menu_order" ); ?>
+								
+								<?php if ($cat_name == "branding") : ?>
+								<li id="<?php echo $cat_name; ?>"><a href='<?php echo $cat_url ?>'><?php the_title(); ?> & Corporate Identity</a></li>
+								<?php else : ?>
+								<li id="<?php echo $cat_name; ?>"><a href='<?php echo $cat_url ?>'><?php the_title(); ?></a></li>
+								<?php endif; ?>
+								
+								
+							<?php endwhile; ?>
+							<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
 						</ul>
 					</div><!-- #portfolio-menu -->
 					<div class="clear"></div>

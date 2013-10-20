@@ -506,6 +506,15 @@ body.category .project-popup {
   z-index: 0;
   cursor: pointer;
 }
+body.page-template-page-templatesportfolio-page-php .project-popup p,
+body.category .project-popup p {
+  font-family: "adobe-garamond-pro", sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 5px 0;
+  letter-spacing: 1px;
+  color: #fff;
+}
 body.page-template-page-templatesportfolio-page-php .project-popup h3,
 body.category .project-popup h3 {
   font-family: "adobe-garamond-pro", sans-serif;
