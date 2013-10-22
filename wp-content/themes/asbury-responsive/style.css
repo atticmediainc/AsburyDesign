@@ -155,7 +155,7 @@ body {
   -webkit-hyphens: none !important;
   -moz-hyphens: none !important;
   hyphens: none !important;
-  letter-spacing: 0.3px;
+  letter-spacing: normal;
   font-size: 20px;
 }
 #content .entry-header {
@@ -181,7 +181,7 @@ body {
   text-transform: none;
 }
 .entry-content {
-  font-family: "garamond-premier-pro-display", serif;
+  font-family: "adobe-garamond-pro", serif;
   font-size: 20px;
   letter-spacing: 1px;
 }
@@ -284,7 +284,7 @@ body.home .slider-img .slide-content .slide-title-arrow {
   margin-top: 1px;
 }
 body.home .slider-img .slide-content p {
-  font-family: "garamond-premier-pro-display", sans-serif;
+  font-family: "adobe-garamond-pro", sans-serif;
   font-size: 25px;
   color: #fff;
   margin: 2px 0 0;
@@ -321,12 +321,12 @@ body.home .bx-pager-item a.active {
   background: url('images/featured_nav_on.png') top left no-repeat !important;
 }
 body.home .site-content {
-  font-family: "garamond-premier-pro-display", "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+  font-family: "adobe-garamond-pro", "adobe-garamond-pro", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   color: #555555;
-  letter-spacing: .3px;
+  letter-spacing: normal;
 }
 body.home .site-content h2 {
   color: #cc0000;
