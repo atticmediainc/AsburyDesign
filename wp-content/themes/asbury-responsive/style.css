@@ -168,9 +168,9 @@ body {
 }
 .entry-title {
   color: #cc0000;
-  font-family: "adobe-garamond-pro", Arial, sans-serif;
+  font-family: "garamond-premier-pro-display", Arial, sans-serif;
   font-size: 50px;
-  letter-spacing: 0px;
+  letter-spacing: normal;
   font-weight: 300;
   line-height: 1.2em;
   margin-bottom: 10px;
@@ -199,12 +199,14 @@ body {
   hyphens: none;
 }
 .entry-content a {
-  color: #666666;
-  font-weight: bold;
+  color: inherit;
+  font-weight: normal;
+  text-decoration: underline;
 }
 .entry-content a:hover {
-  color: #666666;
-  font-weight: bold;
+  color: #CC0000;
+  font-weight: normal;
+  text-decoration: underline;
 }
 .site-footer {
   max-width: 300px;
@@ -321,7 +323,7 @@ body.home .bx-pager-item a.active {
   background: url('images/featured_nav_on.png') top left no-repeat !important;
 }
 body.home .site-content {
-  font-family: "adobe-garamond-pro", "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+  font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -331,12 +333,12 @@ body.home .site-content {
 body.home .site-content h2 {
   color: #cc0000;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 22px;
   font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
   font-weight: normal;
 }
 body.home .site-content p {
-  font-size: 25px;
+  font-size: 22px;
 }
 /* Portfolio Page and Portfolio category pages */
 body.page-template-page-templatesportfolio-page-php,
@@ -466,7 +468,7 @@ body.category #portfolio-menu.toggled li.active-category a {
 }
 body.page-template-page-templatesportfolio-page-php #content .entry-content,
 body.category #content .entry-content {
-  font-size: 25px;
+  font-size: 22px;
 }
 body.page-template-page-templatesportfolio-page-php #project-container,
 body.category #project-container {
