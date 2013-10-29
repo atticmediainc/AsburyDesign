@@ -798,6 +798,10 @@ body.page-id-10 p {
   width: 1050px;
   margin: 0 auto;
 }
+.ie8 .entry-thumbnail,
+.ie7 .entry-thumbnail {
+  padding: 0 35px 14px 0;
+}
 .ie8 .site-footer,
 .ie7 .site-footer {
   max-width: 1200px;
