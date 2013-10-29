@@ -523,6 +523,10 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 	
 	#project-container {
 		margin-top: 20px;
+		
+		a:hover {
+			color: #fff;
+		}
 	}
 	
 	.project {
@@ -816,7 +820,7 @@ body.page-id-10 {
 }
 
 @media (min-width: 1080px) {
-		
+	
 	.wrap {
 		width: 1090px;
 	}
@@ -856,15 +860,79 @@ body.page-id-10 {
 
 
 
-/*#primary {
+.ie8, .ie7 {
 	
-	#content {
+	.site-header {
+		height: 175px;
 		
-		article {
+		#header-container {
+			max-width: 1050px;
+			text-align: left;
+		}
+		
+		#logo {
+			padding-left: 50px;
+		}
+	}
+	
+	.navbar {
+		width: auto;
+		position: absolute;
+		bottom: -18px;
+		right: 0;
+		margin: 0;
+		
+		.main-navigation {
+			width: auto;
+		}
+		
+		.menu-toggle {
+			display: none;
+		}
+		
+		.nav-menu {
+			display: block;
+			border: none;
 			
-			.entry-header {
-			
+			li {
+				display: inline-block;
+				border: none;
+				padding: 7px 6px;
 			}
 		}
 	}
-}*/
+	
+	#main {
+		
+		#main-container {
+			max-width: 1200px;
+		}
+		
+		#primary {
+			width: 1050px;
+			margin: 0 auto;
+		}
+	} 
+	
+	.footer-container {
+		width: 1050px;
+		margin: 0 auto;
+	}
+	
+	body.home {
+		
+		.slider-img {
+			background-size: 1500px 500px !important;
+			width: 100% !important;
+			height: 500px;
+			
+			.slide-content {
+				bottom: 50px;
+			}
+		}
+		
+		.bx-controls {
+			display: block;
+		}
+	} 
+}
