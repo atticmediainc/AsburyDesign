@@ -837,3 +837,47 @@ body.page-id-10 p {
 .ie7 body.home .bx-controls {
   display: block;
 }
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu,
+.ie8 body.category #portfolio-menu,
+.ie7 body.category #portfolio-menu,
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled,
+.ie8 body.category #portfolio-menu.toggled,
+.ie7 body.category #portfolio-menu.toggled {
+  margin-top: 10px;
+}
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul,
+.ie8 body.category #portfolio-menu ul,
+.ie7 body.category #portfolio-menu ul,
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul,
+.ie8 body.category #portfolio-menu.toggled ul,
+.ie7 body.category #portfolio-menu.toggled ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: none;
+}
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li,
+.ie8 body.category #portfolio-menu ul li,
+.ie7 body.category #portfolio-menu ul li,
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li,
+.ie8 body.category #portfolio-menu.toggled ul li,
+.ie7 body.category #portfolio-menu.toggled ul li {
+  float: left;
+  margin-right: 47px;
+  list-style: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+.ie8 body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
+.ie7 body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
+.ie8 body.category .portfolio-menu-toggle,
+.ie7 body.category .portfolio-menu-toggle {
+  display: none;
+}
