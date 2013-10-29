@@ -802,6 +802,10 @@ body.page-id-10 p {
 .ie7 .entry-header {
   max-width: none;
 }
+.ie8 .entry-content,
+.ie7 .entry-content {
+  max-width: none;
+}
 .ie8 .entry-thumbnail,
 .ie7 .entry-thumbnail {
   padding: 0 35px 14px 0;
