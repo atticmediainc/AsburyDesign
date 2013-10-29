@@ -758,6 +758,10 @@ body.page-id-10 p {
 .ie7 .site-header #logo {
   padding-left: 50px;
 }
+.ie8 .site-header #logo img,
+.ie7 .site-header #logo img {
+  height: 150px;
+}
 .ie8 .navbar,
 .ie7 .navbar {
   width: auto;
@@ -793,6 +797,10 @@ body.page-id-10 p {
 .ie7 #main #primary {
   width: 1050px;
   margin: 0 auto;
+}
+.ie8 .site-footer,
+.ie7 .site-footer {
+  max-width: 1200px;
 }
 .ie8 .footer-container,
 .ie7 .footer-container {
