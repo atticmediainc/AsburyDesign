@@ -955,7 +955,7 @@ body.page-id-10 p {
   left: -545px;
 }
 .ie7 .entry-header {
-  width: 100%;
+  width: 100% !important;
 }
 .ie7 .entry-thumbnail {
   width: 400px;
