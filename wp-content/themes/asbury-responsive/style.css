@@ -875,9 +875,64 @@ body.page-id-10 p {
   border: none;
   padding: 0;
 }
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li a,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li a,
+.ie8 body.category #portfolio-menu ul li a,
+.ie7 body.category #portfolio-menu ul li a,
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li a,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li a,
+.ie8 body.category #portfolio-menu.toggled ul li a,
+.ie7 body.category #portfolio-menu.toggled ul li a {
+  font-family: "din-condensed-web", serif;
+  font-size: 15px;
+  color: #b4b4b4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0;
+}
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li.active-category a,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li.active-category a,
+.ie8 body.category #portfolio-menu ul li.active-category a,
+.ie7 body.category #portfolio-menu ul li.active-category a,
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li.active-category a,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li.active-category a,
+.ie8 body.category #portfolio-menu.toggled ul li.active-category a,
+.ie7 body.category #portfolio-menu.toggled ul li.active-category a {
+  color: #cc0000;
+}
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li.first a,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li.first a,
+.ie8 body.category #portfolio-menu ul li.first a,
+.ie7 body.category #portfolio-menu ul li.first a,
+.ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li.first a,
+.ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li.first a,
+.ie8 body.category #portfolio-menu.toggled ul li.first a,
+.ie7 body.category #portfolio-menu.toggled ul li.first a {
+  padding: 0px;
+}
 .ie8 body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
 .ie7 body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
 .ie8 body.category .portfolio-menu-toggle,
 .ie7 body.category .portfolio-menu-toggle {
   display: none;
+}
+.ie8 body.page-template-page-templatesportfolio-page-php #project-container,
+.ie7 body.page-template-page-templatesportfolio-page-php #project-container,
+.ie8 body.category #project-container,
+.ie7 body.category #project-container {
+  margin-top: 10px;
+}
+.ie8 body.page-template-page-templatesportfolio-page-php .project,
+.ie7 body.page-template-page-templatesportfolio-page-php .project,
+.ie8 body.category .project,
+.ie7 body.category .project {
+  display: inline-block;
+  float: left;
+  margin: 10px 3px;
+}
+.ie8 body.page-template-page-templatesportfolio-page-php .project.first,
+.ie7 body.page-template-page-templatesportfolio-page-php .project.first,
+.ie8 body.category .project.first,
+.ie7 body.category .project.first {
+  margin: 10px 10px 10px 0;
 }

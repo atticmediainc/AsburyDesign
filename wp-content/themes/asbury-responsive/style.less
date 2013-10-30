@@ -979,12 +979,43 @@ body.page-id-10 {
 					cursor: pointer;
 					border: none;
 					padding: 0;
+					
+					a {
+						font-family: "din-condensed-web", serif;
+						font-size: 15px;
+						color: #b4b4b4;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						padding: 0;
+					}
+				}
+				
+				li.active-category a {
+					color: #cc0000;
+				}
+				
+				li.first a {
+					padding: 0px;
 				}
 			}
 		}
 		
 		.portfolio-menu-toggle {
 			display: none;
+		}
+		
+		#project-container {
+			margin-top: 10px;
+		}
+		
+		.project {
+			display: inline-block;
+			float: left;
+			margin: 10px 3px;
+		}
+		
+		.project.first {
+			margin: 10px 10px 10px 0;
 		}
 	}
 }
