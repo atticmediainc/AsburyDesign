@@ -936,6 +936,10 @@ body.page-id-10 p {
 .ie7 body.category .project.first {
   margin: 10px 10px 10px 0;
 }
+.ie7 .site {
+  position: relative;
+  overflow: hidden;
+}
 .ie7 .site-header #logo img {
   width: 150px;
 }
@@ -948,5 +952,11 @@ body.page-id-10 p {
 }
 .ie7 .slider-img {
   position: relative;
-  left: -515px;
+  left: -545px;
+}
+.ie7 .entry-header {
+  width: 100%;
+}
+.ie7 .entry-thumbnail {
+  width: 400px;
 }
