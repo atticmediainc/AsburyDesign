@@ -936,3 +936,17 @@ body.page-id-10 p {
 .ie7 body.category .project.first {
   margin: 10px 10px 10px 0;
 }
+.ie7 .site-header #logo img {
+  width: 150px;
+}
+.ie7 .navbar .main-navigation {
+  float: right;
+}
+.ie7 .navbar .nav-menu {
+  position: relative;
+  left: 160px;
+}
+.ie7 .slider-img {
+  position: relative;
+  left: -515px;
+}
