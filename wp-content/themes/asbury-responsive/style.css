@@ -687,11 +687,11 @@ body.page-id-10 p {
   body.category .project {
     display: inline-block;
     float: left;
-    margin: 10px 3px;
+    margin: 10px 12px 10px 0;
   }
   body.page-template-page-templatesportfolio-page-php .project.first,
   body.category .project.first {
-    margin: 10px 10px 10px 0;
+    margin: 10px 12px 10px 0;
   }
 }
 @media (min-width: 980px) {
@@ -928,13 +928,13 @@ body.page-id-10 p {
 .ie7 body.category .project {
   display: inline-block;
   float: left;
-  margin: 10px 3px;
+  margin: 10px 12px 10px 0;
 }
 .ie8 body.page-template-page-templatesportfolio-page-php .project.first,
 .ie7 body.page-template-page-templatesportfolio-page-php .project.first,
 .ie8 body.category .project.first,
 .ie7 body.category .project.first {
-  margin: 10px 10px 10px 0;
+  margin: 10px 12px 10px 0px;
 }
 .ie7 .site {
   position: relative;
