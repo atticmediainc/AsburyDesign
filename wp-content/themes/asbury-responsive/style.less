@@ -248,6 +248,7 @@ body {
 }
 
 #icons {
+	margin-bottom: 20px;
 	
 	a {
 		margin-right: 10px; 
@@ -263,8 +264,9 @@ body {
 	font-family: "adobe-garamond-pro", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
-	text-align: right;
+	text-align: left;
 	color: #555555;
+	clear: both;
 }
 
 .contact-tel {
@@ -279,7 +281,7 @@ body {
 #copyright {
 	font-family: "adobe-garamond-pro", Arial, sans-serif;
 	font-size: 12px;
-	text-align: right;
+	text-align: left;
 	color: #555555;
 	margin: 5px 0;
 }
@@ -602,14 +604,11 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 /* Services Page */
 body.page-id-10 {
 	
-	#content .entry-content {
-		font-size: 22px;
-	}
-	
 	p {
 		margin: 0 0 15px;
 	}
 }
+
 
 /* ------------------------------------- */
 /*     Responsive				         */
@@ -689,6 +688,15 @@ body.page-id-10 {
 	
 	.site-footer {
 		max-width: 700px;
+	}
+	
+	#footer-contact {
+		text-align: right;
+		clear: none;
+	}
+	
+	#copyright {
+		text-align: right;
 	}
 	
 	/* Home page */
