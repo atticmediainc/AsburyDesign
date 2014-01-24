@@ -36,6 +36,7 @@ body {
   -webkit-hyphens: none !important;
   -moz-hyphens: none !important;
   hyphens: none !important;
+  overflow: hidden;
 }
 .site {
   max-width: none;
@@ -67,27 +68,26 @@ body {
   width: 100%;
   background: transparent;
   margin-top: 15px;
-  /* Remove caret from mobile menu */
-
 }
 .navbar .menu-toggle {
   background-color: transparent;
   border: 1px solid #dbdbdb;
-  padding: 12px 0 12px 13px;
+  padding: 5px 0 12px 13px;
   width: 300px;
-  text-align: left;
-  background: url('images/menu-dropdown.png') 95% center no-repeat;
+  text-align: center;
+  background: url('images/mobile-menu-bg.jpg') repeat-x;
   margin: 0;
   cursor: pointer;
   color: #444;
   display: block;
-  font-family: "din-condensed-web", sans-serif;
-  font-size: 15px;
+  font-family: "adobe-garamond-pro", sans-serif;
+  font-size: 22px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
+  height: 40px;
 }
-.navbar .menu-toggle:after {
-  content: '';
+.navbar .menu-toggle span {
+  font-size: 15px;
 }
 .nav-menu,
 .toggled-on .nav-menu {
@@ -108,11 +108,11 @@ body {
 .toggled-on .nav-menu li a {
   font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 22px;
   font-style: normal;
   font-weight: normal;
-  text-align: left;
-  text-transform: uppercase;
+  text-align: center;
+  text-transform: none;
   padding: 5px 10px 5px 12px;
   color: #555555;
   display: block;
@@ -251,30 +251,38 @@ body {
 }
 /* Home page */
 body.home .site-header #header-container {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 body.home .site-footer {
   border: none;
 }
 body.home #slideshow-wrapper {
   background: #eeeee0 url('images/home-shadow.png') top left repeat-x;
+  margin-bottom: 120px;
+}
+body.home .bx-viewport {
+  overflow: visible !important;
 }
 body.home .slider-img {
-  background-size: 725px 212px !important;
+  background-size: 450px 150px !important;
   width: 100% !important;
-  height: 212px;
+  height: 150px;
 }
 body.home .slider-img .wrap {
   position: static;
 }
 body.home .slider-img .slide-content {
-  position: absolute;
-  bottom: 10px;
-  padding: 15px;
-  background: url('images/slider-content-bg.png') top left repeat;
-  margin-left: 19px;
+  padding: 15px 0;
+  background: #555555;
   height: 100px;
   text-align: left;
+  position: relative;
+  bottom: -150px;
+  margin: 0;
+  padding-left: 3000px;
+  margin-left: -3000px;
+  padding-right: 3000px;
+  margin-right: -3000px;
 }
 body.home .slider-img .slide-content h4 {
   font-size: 15px;
@@ -294,6 +302,7 @@ body.home .slider-img .slide-content p {
   color: #fff;
   margin: 2px 0 0;
   text-align: left;
+  line-height: 25px;
 }
 body.home .bxslider {
   text-align: center;
@@ -581,6 +590,15 @@ body.page-id-10 p {
     border: none;
     padding: 7px 6px;
   }
+  .navbar .nav-menu li a {
+    font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 5px 10px 5px 12px;
+  }
   .navbar .nav-menu li:last-of-type {
     padding: 7px 0 7px 6px;
   }
@@ -610,10 +628,25 @@ body.page-id-10 p {
     text-align: right;
   }
   /* Home page */
+  body.home .bx-viewport {
+    overflow: hidden !important;
+  }
+  body.home #slideshow-wrapper {
+    margin-bottom: 0;
+  }
   body.home .slider-img {
     background-size: 979px 286px !important;
     width: 100% !important;
     height: 286px;
+  }
+  body.home .slider-img .slide-content {
+    padding: 15px;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 19px;
+    text-align: left;
+    width: auto;
+    background: url('images/slider-content-bg.png') top left repeat;
   }
   body.home .bx-controls {
     display: block;
