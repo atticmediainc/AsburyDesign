@@ -58,16 +58,18 @@ body {
 }
 .site-header #logo {
   width: 100%;
+  text-align: center;
 }
 .site-header #logo img {
   width: 100%;
-  max-width: 150px;
+  max-width: 397px;
   height: auto;
 }
 .navbar {
   width: 100%;
   background: transparent;
   margin-top: 15px;
+  text-align: center;
 }
 .navbar .menu-toggle {
   background-color: transparent;
@@ -561,19 +563,12 @@ body.page-id-10 p {
   .wrap {
     width: 700px;
   }
-  .site-header {
-    height: 175px;
-  }
   .site-header #header-container {
     max-width: 700px;
     text-align: left;
   }
   .navbar {
-    width: 430px;
-    position: absolute;
-    bottom: -18px;
-    right: 0;
-    margin: 0;
+    margin-top: -10px;
   }
   .navbar .main-navigation {
     width: auto;
@@ -591,13 +586,17 @@ body.page-id-10 p {
     padding: 7px 6px;
   }
   .navbar .nav-menu li a {
-    font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+    font-family: "franklin-gothic-urw-cond", Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     text-align: left;
     text-transform: uppercase;
     padding: 5px 10px 5px 12px;
+    color: #555555;
+  }
+  .navbar .nav-menu li a:hover {
+    color: #AA050A;
   }
   .navbar .nav-menu li:last-of-type {
     padding: 7px 0 7px 6px;
@@ -742,9 +741,6 @@ body.page-id-10 p {
   .site-header #header-container {
     max-width: 940px;
   }
-  .navbar {
-    width: auto;
-  }
   #main #main-container {
     max-width: 940px;
   }
@@ -765,11 +761,23 @@ body.page-id-10 p {
   .wrap {
     width: 1090px;
   }
+  .site-header {
+    height: 175px;
+  }
   .site-header #header-container {
     max-width: 1050px;
   }
   .site-header #logo {
-    padding-left: 50px;
+    text-align: left;
+  }
+  .navbar {
+    width: auto;
+    position: absolute;
+    bottom: 29px;
+    right: 0;
+    margin: 0;
+    margin-top: 15px;
+    text-align: right;
   }
   #main #main-container {
     max-width: 1200px;
@@ -795,10 +803,6 @@ body.page-id-10 p {
   max-width: 1050px;
   text-align: left;
 }
-.ie8 .site-header #logo,
-.ie7 .site-header #logo {
-  padding-left: 50px;
-}
 .ie8 .site-header #logo img,
 .ie7 .site-header #logo img {
   height: 150px;
@@ -807,7 +811,7 @@ body.page-id-10 p {
 .ie7 .navbar {
   width: auto;
   position: absolute;
-  bottom: -18px;
+  bottom: 29px;
   right: 0;
   margin: 0;
 }
@@ -982,7 +986,7 @@ body.page-id-10 p {
   overflow: hidden;
 }
 .ie7 .site-header #logo img {
-  width: 150px;
+  width: 397px;
 }
 .ie7 .navbar .main-navigation {
   float: right;

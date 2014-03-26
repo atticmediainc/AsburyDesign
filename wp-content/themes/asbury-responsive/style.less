@@ -67,10 +67,11 @@ body {
 	
 	#logo {
 		width: 100%;
-		
+		text-align: center;
+
 		img {
 			width: 100%;
-			max-width: 150px;
+			max-width: 397px;
 			height: auto;
 		}
 	}
@@ -80,6 +81,7 @@ body {
 	width: 100%;
 	background: transparent;
 	margin-top: 15px;
+	text-align: center;
 	
 	.menu-toggle {
 		background-color: transparent;
@@ -635,7 +637,6 @@ body.page-id-10 {
 	}
 	
 	.site-header {
-		height: 175px;
 		
 		#header-container {
 			max-width: 700px;
@@ -644,12 +645,8 @@ body.page-id-10 {
 	}
 	
 	.navbar {
-		width: 430px;
-		position: absolute;
-		bottom: -18px;
-		right: 0;
-		margin: 0;
-		
+		margin-top: -10px;
+
 		.main-navigation {
 			width: auto;
 		}
@@ -668,13 +665,17 @@ body.page-id-10 {
 				padding: 7px 6px;
 				
 				a {
-					font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+					font-family: "franklin-gothic-urw-cond", Arial, Helvetica, sans-serif;
 					font-size: 15px;
 					font-style: normal;
-					font-weight: normal;
+					font-weight: 400;
 					text-align: left;
 					text-transform: uppercase;
 					padding: 5px 10px 5px 12px;
+					color: #555555;
+				}
+				a:hover {
+					color: #AA050A;
 				}
 			}
 			
@@ -837,10 +838,6 @@ body.page-id-10 {
 		}
 	}
 	
-	.navbar {
-		width: auto;
-	}
-	
 	#main {
 		
 		#main-container {
@@ -874,16 +871,27 @@ body.page-id-10 {
 	}
 	
 	.site-header {
-		
+		height: 175px;
+
 		#header-container {
 			max-width: 1050px;
 		}
-		
+
 		#logo {
-			padding-left: 50px;
+			text-align: left;
 		}
 	}
 	
+	.navbar {
+		width: auto;
+		position: absolute;
+		bottom: 29px;
+		right: 0;
+		margin: 0;
+		margin-top: 15px;
+		text-align: right;
+	}
+
 	#main {
 		
 		#main-container {
@@ -919,7 +927,6 @@ body.page-id-10 {
 		}
 		
 		#logo {
-			padding-left: 50px;
 			
 			img {
 				height: 150px;
@@ -930,7 +937,7 @@ body.page-id-10 {
 	.navbar {
 		width: auto;
 		position: absolute;
-		bottom: -18px;
+		bottom: 29px;
 		right: 0;
 		margin: 0;
 		
@@ -1079,7 +1086,7 @@ body.page-id-10 {
 		#logo {
 			
 			img {
-				width: 150px;
+				width: 397px;
 			}
 		}
 	}

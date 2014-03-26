@@ -4,7 +4,8 @@ $j(document).ready(function(){
 	
 	$j('.bxslider').bxSlider({
 		auto: true,
-		pause: 5000,
+		pause: 7500,
+		speed: 7500,
 		responsive: true,
 		mode: 'fade',
 		pager: true,
