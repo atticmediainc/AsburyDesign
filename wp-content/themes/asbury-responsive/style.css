@@ -124,15 +124,15 @@ body {
 .nav-menu li a:hover,
 .toggled-on .nav-menu li a:hover {
   background: transparent;
-  color: #CC0000;
+  color: #AA050A;
 }
 .nav-menu li:hover a,
 .toggled-on .nav-menu li:hover a {
-  color: #CC0000;
+  color: #AA050A;
 }
 .nav-menu li.current-menu-item a,
 .toggled-on .nav-menu li.current-menu-item a {
-  color: #CC0000;
+  color: #AA050A;
   font-style: normal;
 }
 .toggled-on .nav-menu,
@@ -169,7 +169,7 @@ body {
   float: left;
 }
 .entry-title {
-  color: #cc0000;
+  color: #AA050A;
   font-family: "garamond-premier-pro-display", Arial, sans-serif;
   font-size: 50px;
   letter-spacing: normal;
@@ -192,7 +192,7 @@ body {
   margin: 10px 0 0 0;
   font-size: 1.35em;
   font-family: "adobe-caslon-pro", serif;
-  color: #cc0000;
+  color: #AA050A;
   font-weight: normal;
   word-wrap: break-word;
   -webkit-hyphens: none;
@@ -205,7 +205,7 @@ body {
   text-decoration: underline;
 }
 .entry-content a:hover {
-  color: #CC0000;
+  color: #AA050A;
   font-weight: normal;
   text-decoration: underline;
 }
@@ -237,12 +237,12 @@ body {
   clear: both;
 }
 .contact-tel {
-  color: #cc0000;
+  color: #AA050A;
   /* targets smartphones that convert telephone to link automatically */
 
 }
 .contact-tel a {
-  color: #cc0000;
+  color: #AA050A;
 }
 #copyright {
   font-family: "adobe-garamond-pro", Arial, sans-serif;
@@ -345,7 +345,7 @@ body.home .site-content {
   letter-spacing: normal;
 }
 body.home .site-content h2 {
-  color: #cc0000;
+  color: #AA050A;
   margin-bottom: 10px;
   font-size: 22px;
   font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
@@ -416,7 +416,7 @@ body.category #portfolio-menu li a {
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu li a:hover,
 body.category #portfolio-menu li a:hover {
-  color: #cc0000;
+  color: #AA050A;
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu li.first a,
 body.category #portfolio-menu li.first a {
@@ -424,7 +424,7 @@ body.category #portfolio-menu li.first a {
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu li.active-category a,
 body.category #portfolio-menu li.active-category a {
-  color: #cc0000;
+  color: #AA050A;
 }
 body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
 body.category .portfolio-menu-toggle {
@@ -474,11 +474,11 @@ body.category #portfolio-menu.toggled li a {
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a:hover,
 body.category #portfolio-menu.toggled li a:hover {
-  color: #cc0000;
+  color: #AA050A;
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li.active-category a,
 body.category #portfolio-menu.toggled li.active-category a {
-  color: #cc0000;
+  color: #AA050A;
 }
 body.page-template-page-templatesportfolio-page-php #content .entry-content,
 body.category #content .entry-content {
@@ -555,6 +555,71 @@ body.category .fancybox-overlay {
 /* Services Page */
 body.page-id-10 p {
   margin: 0 0 15px;
+}
+.about-page-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.about-page-menu li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.about-page-menu li a {
+  color: #AA050A;
+  text-decoration: none;
+  border-bottom: 1px solid #AA050A;
+  display: block;
+  line-height: 12pt;
+}
+.about-page-menu li a:hover {
+  text-decoration: none;
+}
+#about-team-nav {
+  padding: 0;
+  margin: 35px 0;
+  list-style-type: none;
+}
+#about-team-nav li {
+  display: inline-block;
+  margin: 10px 12px 10px 0;
+  font-family: "franklin-gothic-urw-cond";
+  font-size: 15px;
+}
+#about-team-nav li img.thumb {
+  opacity: .5;
+}
+#about-team-nav li:hover img.thumb {
+  opacity: 1;
+}
+#about-team-nav a {
+  text-decoration: none;
+}
+#about-team-nav a:hover {
+  text-decoration: none;
+}
+#about-team-nav h3 {
+  font-family: "franklin-gothic-urw-cond";
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.page-template-page-templatesteam-php .entry-title {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.team-member-photo {
+  background: #eeeee0 url('images/home-shadow.png') top left repeat-x;
+  text-align: center;
+}
+.team-contact {
+  margin-bottom: 120px;
+}
+.team-icon {
+  display: inline-block;
+  margin-right: 5px;
+}
+.contact-icons {
+  margin-top: 5px;
 }
 /* ------------------------------------- */
 /*     Responsive				         */
@@ -707,13 +772,13 @@ body.page-id-10 p {
   body.category #portfolio-menu li a:hover,
   body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a:hover,
   body.category #portfolio-menu.toggled li a:hover {
-    color: #cc0000;
+    color: #AA050A;
   }
   body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-project,
   body.category #portfolio-menu .active-project,
   body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled .active-project,
   body.category #portfolio-menu.toggled .active-project {
-    color: #cc0000;
+    color: #AA050A;
   }
   body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
   body.category .portfolio-menu-toggle {
@@ -943,7 +1008,7 @@ body.page-id-10 p {
 .ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li.active-category a,
 .ie8 body.category #portfolio-menu.toggled ul li.active-category a,
 .ie7 body.category #portfolio-menu.toggled ul li.active-category a {
-  color: #cc0000;
+  color: #AA050A;
 }
 .ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li.first a,
 .ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li.first a,
