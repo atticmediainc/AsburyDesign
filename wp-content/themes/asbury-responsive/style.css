@@ -251,6 +251,15 @@ body {
   color: #555555;
   margin: 5px 0;
 }
+.full-width-image {
+  text-align: center;
+  background: #eeeee0 url('images/home-shadow.png') top left repeat-x;
+}
+.full-width-image img.size-full,
+.full-width-image img.size-large,
+.full-width-image img.wp-post-image {
+  max-width: none;
+}
 /* Home page */
 body.home .site-header #header-container {
   margin-bottom: 15px;
@@ -556,6 +565,10 @@ body.category .fancybox-overlay {
 body.page-id-10 p {
   margin: 0 0 15px;
 }
+.page-id-6 .entry-title {
+  margin-bottom: 0;
+  border-bottom: none;
+}
 .about-page-menu {
   margin: 0;
   padding: 0;
@@ -587,10 +600,17 @@ body.page-id-10 p {
   font-size: 15px;
 }
 #about-team-nav li img.thumb {
-  opacity: .5;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter …feColorMatrix type=\'saturate\' values=\'0.0\'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(1);
 }
 #about-team-nav li:hover img.thumb {
-  opacity: 1;
+  filter: none !important;
+  filter: grayscale(0%) !important;
+  -webkit-filter: grayscale(0%) !important;
+  -moz-filter: grayscale(0%) !important;
+  -ms-filter: grayscale(0%) !important;
+  -o-filter: grayscale(0%) !important;
 }
 #about-team-nav a {
   text-decoration: none;

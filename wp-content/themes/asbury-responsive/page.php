@@ -13,6 +13,12 @@
 
 get_header(); ?>
 
+<?php if(is_page('about')) : ?>
+<div class="full-width-image">
+	<?php the_post_thumbnail('full'); ?>
+</div>
+<? endif; ?>
+
 <div id="main-container">
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
@@ -25,7 +31,7 @@ get_header(); ?>
 						<h1 class="entry-title"><?php the_title(); ?></h1>
 					</header><!-- .entry-header -->
 					
-					<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
+					<?php if ( has_post_thumbnail() && ! post_password_required() && !is_page('about') ) : ?>
 					<div class="entry-thumbnail">
 						<?php the_post_thumbnail('full'); ?>
 					</div>

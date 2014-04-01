@@ -289,6 +289,14 @@ body {
 	margin: 5px 0;
 }
 
+.full-width-image {
+	text-align: center;
+	background: #EEEEE0 url('images/home-shadow.png') top left repeat-x;
+	img.size-full, img.size-large, img.wp-post-image {
+		max-width: none;
+	}
+}
+
 /* Home page */
 body.home {
 	
@@ -623,6 +631,12 @@ body.page-id-10 {
 }
 
 // ABOUT PAGE
+.page-id-6 {
+	.entry-title {
+		margin-bottom: 0;
+		border-bottom: none;
+	}
+}
 .about-page-menu {
 	margin: 0;
 	padding: 0;
@@ -654,12 +668,19 @@ body.page-id-10 {
 		font-family: "franklin-gothic-urw-cond";
 		font-size: 15px;
 		img.thumb {
-			opacity: .5;
+			filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter …feColorMatrix type=\'saturate\' values=\'0.0\'/></filter></svg>#grayscale");
+			filter: gray;
+			-webkit-filter: grayscale(1);
 		}
 	}
 	li:hover {
 		img.thumb {
-			opacity: 1;
+			filter: none !important;
+			filter: grayscale(0%) !important;
+			-webkit-filter: grayscale(0%) !important;
+			-moz-filter: grayscale(0%) !important;
+			-ms-filter: grayscale(0%) !important;
+			-o-filter: grayscale(0%) !important;
 		}
 	}
 	a {
