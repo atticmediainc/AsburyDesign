@@ -603,6 +603,10 @@ body.page-id-10 p {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter …feColorMatrix type=\'saturate\' values=\'0.0\'/></filter></svg>#grayscale");
   filter: gray;
   -webkit-filter: grayscale(1);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 #about-team-nav li:hover img.thumb {
   filter: none !important;
@@ -611,6 +615,10 @@ body.page-id-10 p {
   -moz-filter: grayscale(0%) !important;
   -ms-filter: grayscale(0%) !important;
   -o-filter: grayscale(0%) !important;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
 }
 #about-team-nav a {
   text-decoration: none;
