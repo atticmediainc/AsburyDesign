@@ -294,6 +294,8 @@ body {
 	background: #EEEEE0 url('images/home-shadow.png') top left repeat-x;
 	img.size-full, img.size-large, img.wp-post-image {
 		max-width: none;
+		min-width: 650px;
+		width: 100%;
 	}
 }
 
@@ -624,7 +626,10 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 
 /* Services Page */
 body.page-id-10 {
-	
+	.entry-title {
+		margin-bottom: 0;
+		border-bottom: none;
+	}
 	p {
 		margin: 0 0 15px;
 	}
@@ -821,6 +826,10 @@ body.page-id-10 {
 	#copyright {
 		text-align: right;
 	}
+
+	.full-width-image img.size-full, .full-width-image img.size-large, .full-width-image img.wp-post-image {
+		max-width: none;
+	}
 	
 	/* Home page */
 	body.home {
@@ -949,6 +958,10 @@ body.page-id-10 {
 	.site-footer {
 		max-width: 940px;
 	}
+
+	.full-width-image img.size-full, .full-width-image img.size-large, .full-width-image img.wp-post-image {
+		max-width: 1700px;
+	}
 	
 	/* Home page */
 	body.home {
@@ -1003,6 +1016,10 @@ body.page-id-10 {
 			width: 1050px;
 			margin: 0 auto;
 		}
+	}
+
+	.full-width-image img.size-full, .full-width-image img.size-large, .full-width-image img.wp-post-image {
+		max-width: none;
 	}
 	
 	.site-footer {

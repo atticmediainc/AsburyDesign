@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<?php if(is_page('about')) : ?>
+<?php if(is_page('about') || is_page('services')) : ?>
 <div class="full-width-image">
 	<?php the_post_thumbnail('full'); ?>
 </div>
@@ -31,7 +31,7 @@ get_header(); ?>
 						<h1 class="entry-title"><?php the_title(); ?></h1>
 					</header><!-- .entry-header -->
 					
-					<?php if ( has_post_thumbnail() && ! post_password_required() && !is_page('about') ) : ?>
+					<?php if ( has_post_thumbnail() && ! post_password_required() && !is_page('about') && !is_page('services') ) : ?>
 					<div class="entry-thumbnail">
 						<?php the_post_thumbnail('full'); ?>
 					</div>
@@ -58,7 +58,7 @@ get_header(); ?>
 								<li class=''>
 									<a href="<?php echo the_permalink(); ?>"><img class="thumb" src="<?php the_field('team_thumbnail'); ?>" /></a>
 									<a href="<?php echo the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-									<span><?php if(get_field('linked_in')) the_field('team_title'); ?></span>
+									<span><?php if(get_field('team_title')) the_field('team_title'); ?></span>
 									<div class="contact-icons">
 										<?php if(get_field('linked_in')) : ?>
 										<a class="team-icon" href="<?php the_field('linked_in'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/team-linkedin.png" alt="LinkeIn Icon" /></a>
