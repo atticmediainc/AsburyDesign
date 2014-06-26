@@ -239,7 +239,6 @@ body {
 .contact-tel {
   color: #AA050A;
   /* targets smartphones that convert telephone to link automatically */
-
 }
 .contact-tel a {
   color: #AA050A;
@@ -375,7 +374,6 @@ body.category {
 	.fancybox-inner {
 		width: 300px !important;
 	}*/
-
 }
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
@@ -755,13 +753,12 @@ body.page-id-10 p {
   body.page-template-page-templatesportfolio-page-php,
   body.category {
     /*.fancybox-opened {
-  			width: auto !important;
-  		}
-  		
-  		.fancybox-inner {
-  			width: auto !important;
-  		}*/
-  
+			width: auto !important;
+		}
+		
+		.fancybox-inner {
+			width: auto !important;
+		}*/
   }
   body.page-template-page-templatesportfolio-page-php .hentry,
   body.category .hentry {
@@ -896,6 +893,7 @@ body.page-id-10 p {
   .full-width-image img.size-large,
   .full-width-image img.wp-post-image {
     max-width: none;
+    width: auto;
   }
   .site-footer {
     max-width: 1200px;
