@@ -15,10 +15,9 @@
 
 get_header(); ?>
 
-<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-<div class="team-member-photo">
-	<?php the_post_thumbnail('full'); ?>
-</div>
+<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+<?php if ($feat_image) : ?>
+<div class="featured-image-wrapper"><div class="featured-image" <?php set_slide_bg($feat_image); ?>></div></div>
 <?php endif; ?>
 
 <div id="main-container">

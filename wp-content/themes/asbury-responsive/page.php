@@ -14,10 +14,11 @@
 get_header(); ?>
 
 <?php if(is_page('about') || is_page('services')) : ?>
-<div class="full-width-image">
-	<?php the_post_thumbnail('full'); ?>
-</div>
-<? endif; ?>
+<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+<?php if ($feat_image) : ?>
+<div class="featured-image" <?php set_slide_bg($feat_image); ?>></div>
+<?php endif; ?>
+<?php endif; ?>
 
 <div id="main-container">
 	<div id="primary" class="content-area">
