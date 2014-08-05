@@ -17,6 +17,7 @@
 				<div id="icons" class="left">
 					<a href="https://twitter.com/AsburyDesign"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.jpg" alt="" /></a>
 					<a href="https://www.facebook.com/AsburyDesign"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.jpg" alt="" /></a>
+					<a href="https://www.vimeo.com/asburydesign/asbury-design/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/vimeo.jpg" alt="" /></a>
 					<a href="https://www.pinterest.com/asburydesign/asbury-design-interiors/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pinterest.jpg" alt="" /></a>
 					<a href="http://www.houzz.com/pro/asburydesign/asbury-design"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/houzz.jpg" alt="" /></a>
 					<a href="mailto:steven@asburydesign.net"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mail.jpg" alt="" /></a>
