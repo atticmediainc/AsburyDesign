@@ -30,6 +30,19 @@ ul.nav-menu {
 .clear {
   clear: both;
 }
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
 body {
   background-color: #FFFFFF;
   word-wrap: normal;
@@ -663,9 +676,36 @@ body.page-id-10 p {
 .contact-icons {
   margin-top: 5px;
 }
+body.page-template-page-templatescontact-php .entry-content {
+  width: 65%;
+  padding-right: 35px !important;
+}
+body.page-template-page-templatescontact-php .contact-form-container {
+  width: 34%;
+}
+body.page-template-page-templatescontact-php input,
+body.page-template-page-templatescontact-php textarea {
+  width: 100%;
+  max-width: 360px;
+}
+body.page-template-page-templatescontact-php input[type="submit"] {
+  width: auto;
+  background: #AA050A;
+  border-bottom: none;
+}
 /* ------------------------------------- */
 /*     Responsive				         */
 /* ------------------------------------- */
+@media (max-width: 767px) {
+  body.page-template-page-templatescontact-php .entry-content {
+    width: 100%;
+    padding-right: 0 !important;
+    margin-bottom: 35px;
+  }
+  body.page-template-page-templatescontact-php .contact-form-container {
+    width: 100%;
+  }
+}
 @media (min-width: 768px) {
   .wrap {
     width: 700px;
