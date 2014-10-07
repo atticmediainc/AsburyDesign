@@ -61,7 +61,7 @@ body {
   text-align: center;
 }
 .site-header #logo img {
-  width: 100%;
+  width: auto;
   max-width: 397px;
   height: auto;
 }
@@ -893,9 +893,11 @@ body.page-id-10 p {
   }
   .site-header #header-container {
     max-width: 1050px;
+    height: 175px;
   }
   .site-header #logo {
     text-align: left;
+    width: auto;
   }
   .navbar {
     width: auto;
