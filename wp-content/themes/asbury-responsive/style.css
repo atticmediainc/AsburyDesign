@@ -34,8 +34,10 @@ ul.nav-menu {
 .clearfix:after {
   content: " ";
   /* 1 */
+
   display: table;
   /* 2 */
+
 }
 .clearfix:after {
   clear: both;
@@ -129,7 +131,7 @@ body {
   text-align: center;
   text-transform: none;
   padding: 5px 10px 5px 12px;
-  color: #555555;
+  color: #757575;
   display: block;
 }
 .nav-menu li:hover > a,
@@ -252,6 +254,7 @@ body {
 .contact-tel {
   color: #AA050A;
   /* targets smartphones that convert telephone to link automatically */
+
 }
 .contact-tel a {
   color: #AA050A;
@@ -400,6 +403,7 @@ body.category {
 	.fancybox-inner {
 		width: 300px !important;
 	}*/
+
 }
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
@@ -734,13 +738,13 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   }
   .navbar .nav-menu li a {
     font-family: "franklin-gothic-urw-cond", Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     text-align: left;
     text-transform: uppercase;
     padding: 5px 10px 5px 12px;
-    color: #555555;
+    color: #757575;
   }
   .navbar .nav-menu li a:hover {
     color: #AA050A;
@@ -806,12 +810,13 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.page-template-page-templatesportfolio-page-php,
   body.category {
     /*.fancybox-opened {
-			width: auto !important;
-		}
-		
-		.fancybox-inner {
-			width: auto !important;
-		}*/
+  			width: auto !important;
+  		}
+  		
+  		.fancybox-inner {
+  			width: auto !important;
+  		}*/
+  
   }
   body.page-template-page-templatesportfolio-page-php .hentry,
   body.category .hentry {
@@ -929,11 +934,11 @@ body.page-template-page-templatescontact-php input[type="submit"] {
     width: 1090px;
   }
   .site-header {
-    height: 175px;
+    height: 125px;
   }
   .site-header #header-container {
     max-width: 1050px;
-    height: 175px;
+    height: 125px;
   }
   .site-header #logo {
     text-align: left;
@@ -942,7 +947,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   .navbar {
     width: auto;
     position: absolute;
-    bottom: 29px;
+    bottom: 4px;
     right: 0;
     margin: 0;
     margin-top: 15px;
