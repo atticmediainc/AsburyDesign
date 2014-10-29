@@ -13,6 +13,17 @@ Version:        0.1
 
 
 /* ------------------------------------- */
+/* ------------ Global styles ---------- */
+/* ------------------------------------- */
+
+@AGaramond:'AdobeGaramondW01-Regula';
+@AGaramondItalic:'Adobe Garamond W01 It';
+@SackersGothicHeavy:'SackersGothicW01-Heavy';
+
+
+@AsburyRed: #AA050A;
+
+/* ------------------------------------- */
 /*     Resets for twentythirteen         */
 /* ------------------------------------- */
 
@@ -25,7 +36,7 @@ ul.nav-menu {
 }
 
 /* ------------------------------------- */
-/*     Custom CSS for McCully            */
+/*     Custom CSS for Asbury Design      */
 /* ------------------------------------- */
 
 .left { float: left; }
@@ -106,7 +117,7 @@ body {
 		cursor: pointer;
 		color: #444;
 		display: block;
-		font-family: "adobe-garamond-pro",sans-serif;
+		font-family: @AGaramond ,sans-serif;
 		font-size: 22px;
 		text-decoration: none;
 		text-transform: none;
@@ -132,7 +143,7 @@ body {
 		background: transparent;
 		
 		a {
-			font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+			font-family: @AGaramond, Arial, Helvetica, sans-serif;
 			letter-spacing: 1px;
 			font-size: 22px;
 			font-style: normal;
@@ -147,17 +158,17 @@ body {
 	
 	li:hover > a, li a:hover {
 		background: transparent;
-		color: #AA050A;
+		color: @AsburyRed;
 	}
 	
 	li:hover a {
-		color: #AA050A;
+		color: @AsburyRed;
 	}
 	
 	li.current-menu-item {
 		
 		a {
-			color: #AA050A;
+			color: @AsburyRed;
 			font-style: normal;
 		}
 	}
@@ -206,8 +217,8 @@ body {
 }
 
 .entry-title {
-	color: #AA050A;
-	font-family: "garamond-premier-pro-display", Arial, sans-serif;
+	color: @AsburyRed;
+	font-family: @AGaramond, Arial, sans-serif;
 	font-size: 50px;
 	letter-spacing: normal;
 	font-weight: 300;
@@ -221,21 +232,22 @@ body {
 }
 
 .entry-content {
-	font-family: "adobe-garamond-pro", serif;
+	font-family: @AGaramond, serif;
 	font-size: 20px;
 	letter-spacing: 1px;
 	
 	h2 {
 		display: inline-block;
 		margin: 10px 0 0 0;
-		font-size: 1.35em;
-		font-family: "adobe-garamond-pro", serif;
-		color: #AA050A;
+		font-size: 14px;
+		font-family: @SackersGothicHeavy, serif;
+		color: @AsburyRed;
 		font-weight: normal;
 		word-wrap: break-word;
 		-webkit-hyphens: none;
 		-moz-hyphens: none;
 		hyphens: none;
+		text-transform: uppercase;
 	}
 	
 	a {
@@ -245,7 +257,7 @@ body {
 	}
 	
 	a:hover {
-		color: #AA050A;
+		color: @AsburyRed;
 		font-weight: normal;
 		text-decoration: underline;
 	}
@@ -275,7 +287,7 @@ body {
 }
 
 #footer-contact {
-	font-family: "adobe-garamond-pro", Arial, sans-serif;
+	font-family: @AGaramond, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	text-align: left;
@@ -284,16 +296,16 @@ body {
 }
 
 .contact-tel {
-	color: #AA050A;
+	color: @AsburyRed;
 	
 	/* targets smartphones that convert telephone to link automatically */
 	a {
-		color: #AA050A;
+		color: @AsburyRed;
 	}
 }
 
 #copyright {
-	font-family: "adobe-garamond-pro", Arial, sans-serif;
+	font-family: @AGaramond, Arial, sans-serif;
 	font-size: 12px;
 	text-align: left;
 	color: #555555;
@@ -372,10 +384,12 @@ body.home {
 			h4 {
 				font-size: 15px;
 				color: #fff;
-				font-family: "franklin-gothic-urw-cond", Arial, sans-serif;
+				font-family: @AGaramondItalic, Arial, sans-serif;
 				text-decoration: none;
-				text-transform: uppercase;
+				text-transform: inherit;
 				margin: 7px 0 0 0;
+				-webkit-font-smoothing: antialiased;
+
 			}
 			
 			.slide-title-arrow {
@@ -384,12 +398,13 @@ body.home {
 			}
 			
 			p {
-				font-family: "adobe-garamond-pro", sans-serif;
-				font-size: 25px;
+				font-family: @SackersGothicHeavy, sans-serif;
+				font-size: 12px;
 				color: #fff;
 				margin: 2px 0 0;
 				text-align: left;
-				line-height: 25px;
+				line-height: 12px;
+				text-transform: uppercase;
 			}
 		}
 	}
@@ -431,7 +446,7 @@ body.home {
 	}
 	
 	.site-content {
-		font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+		font-family: @AGaramond, Arial, Helvetica, sans-serif;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 300;
@@ -439,10 +454,10 @@ body.home {
 		letter-spacing: normal;
 				
 		h2 {
-			color: #AA050A;
+			color: @AsburyRed;
 			margin-bottom: 10px;
 			font-size: 22px;
-			font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+			font-family: @AGaramond, Arial, Helvetica, sans-serif;
 			font-weight: normal;
 		}
 		
@@ -491,7 +506,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 			cursor: pointer;
 			
 			a {
-				font-family: "din-condensed-web", serif;
+				font-family: @SackersGothicHeavy, serif;
 				font-size: 1em;
 				font-weight: normal;
 				color: #b4b4b4;
@@ -501,7 +516,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 			}
 			
 			a:hover {
-				color: #AA050A;
+				color: @AsburyRed;
 			}
 		}
 		
@@ -510,7 +525,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 		}
 		
 		li.active-category a {
-			color: #AA050A;
+			color: @AsburyRed;
 		}
 	}
 	
@@ -525,7 +540,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 		cursor: pointer;
 		color: #B4B4B4;
 		display: block;
-		font-family: "din-condensed-web", sans-serif;
+		font-family: @SackersGothicHeavy, sans-serif;
 		font-size: 15px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -549,7 +564,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 			float: none;
 			
 			a {
-				font-family: "din-condensed-web", Arial, Helvetica, sans-serif;
+				font-family: @SackersGothicHeavy, Arial, Helvetica, sans-serif;
 				font-size: .85em;
 				font-style: normal;
 				font-weight: normal;
@@ -562,12 +577,12 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 			}
 			
 			a:hover {
-				color: #AA050A;
+				color: @AsburyRed;
 			}
 		}
 		
 		li.active-category a {
-			color: #AA050A;
+			color: @AsburyRed;
 		}
 	}
 	
@@ -617,7 +632,7 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 		cursor: pointer;
 		
 		p {
-			font-family: "adobe-garamond-pro", sans-serif;
+			font-family: @AGaramond, sans-serif;
 			font-size: 22px;
 			font-weight: normal;
 			margin: 0 0 5px 0;
@@ -626,12 +641,13 @@ body.page-template-page-templatesportfolio-page-php, body.category {
 		}
 		
 		h3 {
-			font-family: "adobe-garamond-pro", sans-serif;
-			font-size: 22px;
-			font-weight: normal;
+			font-family: @SackersGothicHeavy, sans-serif;
+			font-size: 14px;
+			font-weight: normal !important;
 			margin: 0 0 5px 0;
 			letter-spacing: 1px;
 			color: #fff;
+			text-transform: uppercase;
 		}
 	}
 	
@@ -679,9 +695,9 @@ body.page-id-10 {
 		display: inline-block;
 		margin-right: 40px;
 		a {
-			color: #AA050A;
+			color: @AsburyRed;
 			text-decoration: none;
-			border-bottom: 1px solid #AA050A;
+			border-bottom: 1px solid @AsburyRed;
 			display: block;
 			line-height: 12pt;
 		}
@@ -698,8 +714,8 @@ body.page-id-10 {
 	li {
 		display: inline-block;
 		margin: 10px 12px 10px 0;
-		font-family: "franklin-gothic-urw-cond";
-		font-size: 15px;
+		font-family: @AGaramondItalic;
+		font-size: 17px;
 		img.thumb {
 			-webkit-filter: grayscale(100%);  
 		    -webkit-filter: grayscale(1);  
@@ -728,9 +744,11 @@ body.page-id-10 {
 		text-decoration: none;
 	}
 	h3 {
-		font-family: "franklin-gothic-urw-cond";
-		font-size: 25px;
+		font-family: @SackersGothicHeavy;
+		font-size: 17px;
 		margin-bottom: 0;
+		font-weight: normal;
+		text-transform: uppercase;
 	}
 }
 
@@ -771,7 +789,7 @@ body.page-template-page-templatescontact-php {
 	}
 	input[type="submit"] {
 		width: auto;
-		background: #AA050A;
+		background: @AsburyRed;
 		border-bottom: none;
 	}
 }
@@ -832,8 +850,8 @@ body.page-template-page-templatescontact-php {
 				padding: 7px 6px;
 				
 				a {
-					font-family: ".tk-futura-pt", Arial, Helvetica, sans-serif;
-					font-size: 12px;
+					font-family: @SackersGothicHeavy, Arial, Helvetica, sans-serif;
+					font-size: 11px;
 					font-style: normal;
 					font-weight: 400;
 					text-align: left;
@@ -842,7 +860,7 @@ body.page-template-page-templatescontact-php {
 					color: #757575;
 				}
 				a:hover {
-					color: #AA050A;
+					color: @AsburyRed;
 				}
 			}
 			
@@ -943,28 +961,28 @@ body.page-template-page-templatescontact-php {
 			
 			li {
 				float: left;
-				margin-right: 47px;
+				margin-right: 27px;
 				list-style: none;
 				cursor: pointer;
 				border: none;
 				padding: 0;
 				
 				a {
-					font-family: "din-condensed-web", serif;
-					font-size: 15px;
+					font-family: @SackersGothicHeavy, serif;
+					font-size: 11px;
 					color: #b4b4b4;
 					text-transform: uppercase;
-					letter-spacing: 1px;
+					letter-spacing: 0px;
 					padding: 0;
 				}
 				
 				a:hover {
-					color: #AA050A;
+					color: @AsburyRed;
 				}
 			}
 			
 			.active-project {
-				color: #AA050A;
+				color: @AsburyRed;
 			}
 		}
 		
@@ -1249,7 +1267,7 @@ body.page-template-page-templatescontact-php {
 					padding: 0;
 					
 					a {
-						font-family: "din-condensed-web", serif;
+						font-family: @SackersGothicHeavy, serif;
 						font-size: 15px;
 						color: #b4b4b4;
 						text-transform: uppercase;
@@ -1259,7 +1277,7 @@ body.page-template-page-templatescontact-php {
 				}
 				
 				li.active-category a {
-					color: #AA050A;
+					color: @AsburyRed;
 				}
 				
 				li.first a {

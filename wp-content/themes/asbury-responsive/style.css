@@ -10,6 +10,9 @@ Version:        0.1
 */
 /* Import the parent theme stylesheet */
 /* ------------------------------------- */
+/* ------------ Global styles ---------- */
+/* ------------------------------------- */
+/* ------------------------------------- */
 /*     Resets for twentythirteen         */
 /* ------------------------------------- */
 .site {
@@ -19,7 +22,7 @@ ul.nav-menu {
   padding: 0;
 }
 /* ------------------------------------- */
-/*     Custom CSS for McCully            */
+/*     Custom CSS for Asbury Design      */
 /* ------------------------------------- */
 .left {
   float: left;
@@ -97,7 +100,7 @@ body {
   cursor: pointer;
   color: #444;
   display: block;
-  font-family: "adobe-garamond-pro", sans-serif;
+  font-family: 'AdobeGaramondW01-Regula', sans-serif;
   font-size: 22px;
   text-decoration: none;
   text-transform: none;
@@ -123,7 +126,7 @@ body {
 }
 .nav-menu li a,
 .toggled-on .nav-menu li a {
-  font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+  font-family: 'AdobeGaramondW01-Regula', Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   font-size: 22px;
   font-style: normal;
@@ -139,15 +142,15 @@ body {
 .nav-menu li a:hover,
 .toggled-on .nav-menu li a:hover {
   background: transparent;
-  color: #AA050A;
+  color: #aa050a;
 }
 .nav-menu li:hover a,
 .toggled-on .nav-menu li:hover a {
-  color: #AA050A;
+  color: #aa050a;
 }
 .nav-menu li.current-menu-item a,
 .toggled-on .nav-menu li.current-menu-item a {
-  color: #AA050A;
+  color: #aa050a;
   font-style: normal;
 }
 .toggled-on .nav-menu,
@@ -184,8 +187,8 @@ body {
   float: left;
 }
 .entry-title {
-  color: #AA050A;
-  font-family: "garamond-premier-pro-display", Arial, sans-serif;
+  color: #aa050a;
+  font-family: 'AdobeGaramondW01-Regula', Arial, sans-serif;
   font-size: 50px;
   letter-spacing: normal;
   font-weight: 300;
@@ -198,21 +201,22 @@ body {
   text-transform: none;
 }
 .entry-content {
-  font-family: "adobe-garamond-pro", serif;
+  font-family: 'AdobeGaramondW01-Regula', serif;
   font-size: 20px;
   letter-spacing: 1px;
 }
 .entry-content h2 {
   display: inline-block;
   margin: 10px 0 0 0;
-  font-size: 1.35em;
-  font-family: "adobe-garamond-pro", serif;
-  color: #AA050A;
+  font-size: 14px;
+  font-family: 'SackersGothicW01-Heavy', serif;
+  color: #aa050a;
   font-weight: normal;
   word-wrap: break-word;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   hyphens: none;
+  text-transform: uppercase;
 }
 .entry-content a {
   color: inherit;
@@ -220,7 +224,7 @@ body {
   text-decoration: underline;
 }
 .entry-content a:hover {
-  color: #AA050A;
+  color: #aa050a;
   font-weight: normal;
   text-decoration: underline;
 }
@@ -244,7 +248,7 @@ body {
   height: auto;
 }
 #footer-contact {
-  font-family: "adobe-garamond-pro", Arial, sans-serif;
+  font-family: 'AdobeGaramondW01-Regula', Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   text-align: left;
@@ -252,15 +256,15 @@ body {
   clear: both;
 }
 .contact-tel {
-  color: #AA050A;
+  color: #aa050a;
   /* targets smartphones that convert telephone to link automatically */
 
 }
 .contact-tel a {
-  color: #AA050A;
+  color: #aa050a;
 }
 #copyright {
-  font-family: "adobe-garamond-pro", Arial, sans-serif;
+  font-family: 'AdobeGaramondW01-Regula', Arial, sans-serif;
   font-size: 12px;
   text-align: left;
   color: #555555;
@@ -328,22 +332,24 @@ body.home .slider-img .slide-content {
 body.home .slider-img .slide-content h4 {
   font-size: 15px;
   color: #fff;
-  font-family: "franklin-gothic-urw-cond", Arial, sans-serif;
+  font-family: 'Adobe Garamond W01 It', Arial, sans-serif;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: inherit;
   margin: 7px 0 0 0;
+  -webkit-font-smoothing: antialiased;
 }
 body.home .slider-img .slide-content .slide-title-arrow {
   margin-left: 10px;
   margin-top: 1px;
 }
 body.home .slider-img .slide-content p {
-  font-family: "adobe-garamond-pro", sans-serif;
-  font-size: 25px;
+  font-family: 'SackersGothicW01-Heavy', sans-serif;
+  font-size: 12px;
   color: #fff;
   margin: 2px 0 0;
   text-align: left;
-  line-height: 25px;
+  line-height: 12px;
+  text-transform: uppercase;
 }
 body.home .bxslider {
   text-align: center;
@@ -376,7 +382,7 @@ body.home .bx-pager-item a.active {
   background: url('images/featured_nav_on.png') top left no-repeat !important;
 }
 body.home .site-content {
-  font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+  font-family: 'AdobeGaramondW01-Regula', Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -384,10 +390,10 @@ body.home .site-content {
   letter-spacing: normal;
 }
 body.home .site-content h2 {
-  color: #AA050A;
+  color: #aa050a;
   margin-bottom: 10px;
   font-size: 22px;
-  font-family: "adobe-garamond-pro", Arial, Helvetica, sans-serif;
+  font-family: 'AdobeGaramondW01-Regula', Arial, Helvetica, sans-serif;
   font-weight: normal;
 }
 body.home .site-content p {
@@ -445,7 +451,7 @@ body.category #portfolio-menu li {
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu li a,
 body.category #portfolio-menu li a {
-  font-family: "din-condensed-web", serif;
+  font-family: 'SackersGothicW01-Heavy', serif;
   font-size: 1em;
   font-weight: normal;
   color: #b4b4b4;
@@ -455,7 +461,7 @@ body.category #portfolio-menu li a {
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu li a:hover,
 body.category #portfolio-menu li a:hover {
-  color: #AA050A;
+  color: #aa050a;
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu li.first a,
 body.category #portfolio-menu li.first a {
@@ -463,7 +469,7 @@ body.category #portfolio-menu li.first a {
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu li.active-category a,
 body.category #portfolio-menu li.active-category a {
-  color: #AA050A;
+  color: #aa050a;
 }
 body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
 body.category .portfolio-menu-toggle {
@@ -477,7 +483,7 @@ body.category .portfolio-menu-toggle {
   cursor: pointer;
   color: #B4B4B4;
   display: block;
-  font-family: "din-condensed-web", sans-serif;
+  font-family: 'SackersGothicW01-Heavy', sans-serif;
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
@@ -500,7 +506,7 @@ body.category #portfolio-menu.toggled li {
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a,
 body.category #portfolio-menu.toggled li a {
-  font-family: "din-condensed-web", Arial, Helvetica, sans-serif;
+  font-family: 'SackersGothicW01-Heavy', Arial, Helvetica, sans-serif;
   font-size: .85em;
   font-style: normal;
   font-weight: normal;
@@ -513,11 +519,11 @@ body.category #portfolio-menu.toggled li a {
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a:hover,
 body.category #portfolio-menu.toggled li a:hover {
-  color: #AA050A;
+  color: #aa050a;
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li.active-category a,
 body.category #portfolio-menu.toggled li.active-category a {
-  color: #AA050A;
+  color: #aa050a;
 }
 body.page-template-page-templatesportfolio-page-php #content .entry-content,
 body.category #content .entry-content {
@@ -567,7 +573,7 @@ body.category .project-popup {
 }
 body.page-template-page-templatesportfolio-page-php .project-popup p,
 body.category .project-popup p {
-  font-family: "adobe-garamond-pro", sans-serif;
+  font-family: 'AdobeGaramondW01-Regula', sans-serif;
   font-size: 22px;
   font-weight: normal;
   margin: 0 0 5px 0;
@@ -576,12 +582,13 @@ body.category .project-popup p {
 }
 body.page-template-page-templatesportfolio-page-php .project-popup h3,
 body.category .project-popup h3 {
-  font-family: "adobe-garamond-pro", sans-serif;
-  font-size: 22px;
-  font-weight: normal;
+  font-family: 'SackersGothicW01-Heavy', sans-serif;
+  font-size: 14px;
+  font-weight: normal !important;
   margin: 0 0 5px 0;
   letter-spacing: 1px;
   color: #fff;
+  text-transform: uppercase;
 }
 body.page-template-page-templatesportfolio-page-php .project-popup:hover,
 body.category .project-popup:hover {
@@ -613,9 +620,9 @@ body.page-id-10 p {
   margin-right: 40px;
 }
 .about-page-menu li a {
-  color: #AA050A;
+  color: #aa050a;
   text-decoration: none;
-  border-bottom: 1px solid #AA050A;
+  border-bottom: 1px solid #aa050a;
   display: block;
   line-height: 12pt;
 }
@@ -630,8 +637,8 @@ body.page-id-10 p {
 #about-team-nav li {
   display: inline-block;
   margin: 10px 12px 10px 0;
-  font-family: "franklin-gothic-urw-cond";
-  font-size: 15px;
+  font-family: 'Adobe Garamond W01 It';
+  font-size: 17px;
 }
 #about-team-nav li img.thumb {
   -webkit-filter: grayscale(100%);
@@ -658,9 +665,11 @@ body.page-id-10 p {
   text-decoration: none;
 }
 #about-team-nav h3 {
-  font-family: "franklin-gothic-urw-cond";
-  font-size: 25px;
+  font-family: 'SackersGothicW01-Heavy';
+  font-size: 17px;
   margin-bottom: 0;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 .page-template-page-templatesteam-php .entry-title {
   border-bottom: none;
@@ -694,7 +703,7 @@ body.page-template-page-templatescontact-php textarea {
 }
 body.page-template-page-templatescontact-php input[type="submit"] {
   width: auto;
-  background: #AA050A;
+  background: #aa050a;
   border-bottom: none;
 }
 /* ------------------------------------- */
@@ -737,8 +746,8 @@ body.page-template-page-templatescontact-php input[type="submit"] {
     padding: 7px 6px;
   }
   .navbar .nav-menu li a {
-    font-family: ".tk-futura-pt", Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: 'SackersGothicW01-Heavy', Arial, Helvetica, sans-serif;
+    font-size: 11px;
     font-style: normal;
     font-weight: 400;
     text-align: left;
@@ -747,7 +756,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
     color: #757575;
   }
   .navbar .nav-menu li a:hover {
-    color: #AA050A;
+    color: #aa050a;
   }
   .navbar .nav-menu li:last-of-type {
     padding: 7px 0 7px 6px;
@@ -842,7 +851,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li,
   body.category #portfolio-menu.toggled li {
     float: left;
-    margin-right: 47px;
+    margin-right: 27px;
     list-style: none;
     cursor: pointer;
     border: none;
@@ -852,24 +861,24 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.category #portfolio-menu li a,
   body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a,
   body.category #portfolio-menu.toggled li a {
-    font-family: "din-condensed-web", serif;
-    font-size: 15px;
+    font-family: 'SackersGothicW01-Heavy', serif;
+    font-size: 11px;
     color: #b4b4b4;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     padding: 0;
   }
   body.page-template-page-templatesportfolio-page-php #portfolio-menu li a:hover,
   body.category #portfolio-menu li a:hover,
   body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled li a:hover,
   body.category #portfolio-menu.toggled li a:hover {
-    color: #AA050A;
+    color: #aa050a;
   }
   body.page-template-page-templatesportfolio-page-php #portfolio-menu .active-project,
   body.category #portfolio-menu .active-project,
   body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled .active-project,
   body.category #portfolio-menu.toggled .active-project {
-    color: #AA050A;
+    color: #aa050a;
   }
   body.page-template-page-templatesportfolio-page-php .portfolio-menu-toggle,
   body.category .portfolio-menu-toggle {
@@ -1121,7 +1130,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
 .ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li a,
 .ie8 body.category #portfolio-menu.toggled ul li a,
 .ie7 body.category #portfolio-menu.toggled ul li a {
-  font-family: "din-condensed-web", serif;
+  font-family: 'SackersGothicW01-Heavy', serif;
   font-size: 15px;
   color: #b4b4b4;
   text-transform: uppercase;
@@ -1136,7 +1145,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
 .ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu.toggled ul li.active-category a,
 .ie8 body.category #portfolio-menu.toggled ul li.active-category a,
 .ie7 body.category #portfolio-menu.toggled ul li.active-category a {
-  color: #AA050A;
+  color: #aa050a;
 }
 .ie8 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li.first a,
 .ie7 body.page-template-page-templatesportfolio-page-php #portfolio-menu ul li.first a,
