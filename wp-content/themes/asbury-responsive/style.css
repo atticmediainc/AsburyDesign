@@ -219,13 +219,14 @@ body {
   text-transform: uppercase;
 }
 .entry-content a {
-  color: inherit;
-  font-weight: normal;
+  font-family: 'SackersGothicW01-Heavy', serif;
+  color: #aa050a;
   text-decoration: underline;
+  letter-spacing: -0.5px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 .entry-content a:hover {
-  color: #aa050a;
-  font-weight: normal;
   text-decoration: underline;
 }
 .site-footer {
