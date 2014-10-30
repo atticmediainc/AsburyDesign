@@ -349,7 +349,7 @@ body.home .slider-img .slide-content p {
   color: #fff;
   margin: 2px 0 0;
   text-align: left;
-  line-height: 18px;
+  line-height: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -663,16 +663,20 @@ body.page-id-10 p {
 }
 #about-team-nav a {
   text-decoration: none;
+  color: black;
 }
 #about-team-nav a:hover {
   text-decoration: none;
+  color: #aa050a;
 }
 #about-team-nav h3 {
   font-family: 'SackersGothicW01-Heavy';
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 0;
+  margin-top: 13px;
   font-weight: normal;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .page-template-page-templatesteam-php .entry-title {
   border-bottom: none;
