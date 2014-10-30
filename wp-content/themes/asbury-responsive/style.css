@@ -344,13 +344,14 @@ body.home .slider-img .slide-content .slide-title-arrow {
   margin-top: 1px;
 }
 body.home .slider-img .slide-content p {
-  font-family: 'SackersGothicW01-Heavy', sans-serif;
+  font-family: 'SackersGothicW01-Medium', sans-serif;
   font-size: 22px;
   color: #fff;
   margin: 2px 0 0;
   text-align: left;
-  line-height: 12px;
+  line-height: 18px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 body.home .bxslider {
   text-align: center;
@@ -584,7 +585,7 @@ body.category .project-popup p {
 }
 body.page-template-page-templatesportfolio-page-php .project-popup h3,
 body.category .project-popup h3 {
-  font-family: 'SackersGothicW01-Heavy', sans-serif;
+  font-family: 'SackersGothicW01-Medium', sans-serif;
   font-size: 14px;
   font-weight: normal !important;
   margin: 0 0 5px 0;
