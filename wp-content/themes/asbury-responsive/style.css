@@ -37,10 +37,8 @@ ul.nav-menu {
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -259,7 +257,6 @@ body {
 .contact-tel {
   color: #aa050a;
   /* targets smartphones that convert telephone to link automatically */
-
 }
 .contact-tel a {
   color: #aa050a;
@@ -400,7 +397,8 @@ body.home .site-content h2 {
   font-weight: normal;
 }
 body.home .site-content p {
-  font-size: 22px;
+  font-size: 25px;
+  color: #5a5a5a;
 }
 /* Portfolio Page and Portfolio category pages */
 body.page-template-page-templatesportfolio-page-php,
@@ -412,7 +410,6 @@ body.category {
 	.fancybox-inner {
 		width: 300px !important;
 	}*/
-
 }
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
@@ -425,6 +422,11 @@ body.category .hentry {
 body.page-template-page-templatesportfolio-page-php .entry-title,
 body.category .entry-title {
   margin-bottom: 10px;
+}
+body.page-template-page-templatesportfolio-page-php #portfolio-content p,
+body.category #portfolio-content p {
+  font-size: 22px;
+  color: #757575;
 }
 body.page-template-page-templatesportfolio-page-php #portfolio-menu,
 body.category #portfolio-menu {
@@ -609,9 +611,22 @@ body.page-id-10 .entry-title {
 body.page-id-10 p {
   margin: 0 0 15px;
 }
+body.page-id-10 .entry-content p:first-of-type {
+  font-size: 30px;
+  color: #5a5a5a;
+}
+/* Testimonials Page */
+body.page-id-12 .entry-content p:first-of-type {
+  font-size: 30px;
+  color: #5a5a5a;
+}
 .page-id-6 .entry-title {
   margin-bottom: 0;
   border-bottom: none;
+}
+.page-id-6 .entry-content p {
+  font-size: 25px;
+  color: #5a5a5a;
 }
 .about-page-menu {
   margin: 0;
@@ -628,6 +643,9 @@ body.page-id-10 p {
   border-bottom: 1px solid #aa050a;
   display: block;
   line-height: 12pt;
+  font-family: Franklin Gothic light, Arial;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 .about-page-menu li a:hover {
   text-decoration: none;
@@ -826,13 +844,12 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.page-template-page-templatesportfolio-page-php,
   body.category {
     /*.fancybox-opened {
-  			width: auto !important;
-  		}
-  		
-  		.fancybox-inner {
-  			width: auto !important;
-  		}*/
-  
+			width: auto !important;
+		}
+		
+		.fancybox-inner {
+			width: auto !important;
+		}*/
   }
   body.page-template-page-templatesportfolio-page-php .hentry,
   body.category .hentry {
