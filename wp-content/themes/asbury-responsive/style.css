@@ -62,6 +62,9 @@ body {
   width: 300px;
   margin: 0 auto;
 }
+.back-to-top {
+  display: none;
+}
 /* ------------------------------------- */
 /*     Header				             */
 /* ------------------------------------- */
@@ -235,6 +238,25 @@ body {
   padding-top: 20px;
   background: none;
   border-top: none;
+  text-align: center;
+  color: #555;
+}
+.site-footer .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-footer .menu a {
+  font-size: 15px;
+  color: #555;
+}
+.site-footer .widget-last {
+  margin-right: 0;
+}
+.footer-widget {
+  display: inline-block;
+  text-align: left;
+  margin-right: 98px;
 }
 #icons {
   margin-bottom: 20px;
@@ -255,11 +277,11 @@ body {
   clear: both;
 }
 .contact-tel {
-  color: #aa050a;
+  color: #555;
   /* targets smartphones that convert telephone to link automatically */
 }
 .contact-tel a {
-  color: #aa050a;
+  color: #555;
 }
 #copyright {
   font-family: 'AdobeGaramondW01-Regula', Arial, sans-serif;
@@ -790,7 +812,21 @@ body.page-template-page-templatescontact-php input[type="submit"] {
 /* ------------------------------------- */
 /*     Responsive				         */
 /* ------------------------------------- */
+@media (max-width: 600px) {
+  .back-to-top {
+    display: block;
+  }
+}
 @media (max-width: 767px) {
+  .site-footer .textwidget,
+  .site-footer .widget-last {
+    margin-top: 25px;
+  }
+  .footer-widget {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
   body.home #home-featured ul li {
     width: 100%;
     max-width: none;
@@ -872,6 +908,9 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   }
   .site-footer {
     max-width: 700px;
+  }
+  .footer-widget {
+    margin-right: 70px;
   }
   #footer-contact {
     text-align: right;
@@ -1047,7 +1086,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
 }
 @media (min-width: 1080px) {
   .wrap {
-    width: 1090px;
+    width: 1050px;
   }
   .site-header {
     height: 125px;
@@ -1091,6 +1130,9 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   .footer-container {
     width: 1050px;
     margin: 0 auto;
+  }
+  .footer-widget {
+    margin-right: 98px;
   }
   /* Home page */
   body.home #home-featured ul li {
