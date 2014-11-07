@@ -47,6 +47,9 @@ if (!function_exists('navScript')) {
 	function loadScripts() {	
 		if (!is_admin()) {
 			
+			wp_register_script( 'retina', get_stylesheet_directory_uri() . '/js/retina-1.1.0.js', array( 'jquery' ) );
+			wp_enqueue_script( 'retina' );
+			
 			if (is_front_page()) {
 				wp_register_script( 'bxslider', get_stylesheet_directory_uri() . '/js/jquery.bxslider/jquery.bxslider.min.js', array( 'jquery' ) );
 				wp_enqueue_script( 'bxslider' );

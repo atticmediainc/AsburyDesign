@@ -94,7 +94,7 @@ body {
 
 		img {
 			width: auto;
-			max-width: 397px;
+			max-width: 275px;
 			height: auto;
 		}
 	}
@@ -454,8 +454,11 @@ body.home {
 		font-weight: 300;
 		color: #555555;
 		letter-spacing: normal;
-		text-ailgn: center;
-				
+		text-align: center;
+		margin-top: 55px;
+		h1 {
+			display: none;
+		}	
 		h2 {
 			color: @AsburyRed;
 			margin-bottom: 10px;
@@ -893,6 +896,18 @@ body.page-template-page-templatescontact-php {
 
 
 @media (max-width: 767px) {
+	// HOME PAGE
+	body.home {
+		#home-featured {
+			ul {
+				li {
+					width: 100%;
+					max-width: none;
+					margin: 0 0 25px 0;
+				}
+			}
+		}
+	}
 	// CONTACT PAGE
 	body.page-template-page-templatescontact-php {
 		.entry-content {
@@ -906,6 +921,21 @@ body.page-template-page-templatescontact-php {
 	}
 }
 
+@media (max-width: 979px) {
+	// HOME PAGE
+	body.home {
+		#home-featured {
+			ul {
+				li {
+					margin-right: 10px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
 
 @media (min-width: 768px) {
 	
@@ -1113,14 +1143,19 @@ body.page-template-page-templatescontact-php {
 	}
 	
 	.site-header {
-		
+		position: fixed;
+		height: 175px;
+		width: 100%;
+		z-index: 2;
+		background-color: white;
 		#header-container {
 			max-width: 940px;
 		}
 	}
 	
 	#main {
-		
+		padding-top: 175px;
+		z-index: 1;
 		#main-container {
 			max-width: 940px;
 		}
@@ -1162,6 +1197,13 @@ body.page-template-page-templatescontact-php {
 				bottom: 50px;
 			}
 		}
+		#home-featured {
+			ul {
+				li {
+					width: 30%;
+				}
+			}
+		}
 	}
 }
 
@@ -1173,7 +1215,6 @@ body.page-template-page-templatescontact-php {
 	
 	.site-header {
 		height: 125px;
-
 		#header-container {
 			max-width: 1050px;
 			height: 125px;
@@ -1196,7 +1237,7 @@ body.page-template-page-templatescontact-php {
 	}
 
 	#main {
-		
+		padding-top: 125px;
 		#main-container {
 			max-width: 1200px;
 		}
@@ -1220,9 +1261,33 @@ body.page-template-page-templatescontact-php {
 		width: 1050px;
 		margin: 0 auto;
 	}
+	/* Home page */
+	body.home {
+		
+		#home-featured {
+			ul {
+				li {
+					width: 32%;
+				}
+			}
+		}
+	}
 }
 
-
+@media (min-width: 2000px) {
+	
+	// HOME PAGE
+	body.home {
+		.slider-img {
+			background-size: 2000px 550px !important;
+			width: 100% !important;
+			height: 550px;
+		}
+		#slideshow-wrapper {
+			background: #EEEEE0 url('images/home-shadow-big.png') top left repeat-x;
+		}
+	}
+}
 
 .ie8, .ie7 {
 	
