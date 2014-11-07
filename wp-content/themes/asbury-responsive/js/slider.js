@@ -14,4 +14,14 @@ $j(document).ready(function(){
 		autoDelay: 500 // wait 500ms before starting slideshow
 	});
 
+	// Setup lightbox for project thumbnails
+	$j('.fancybox').fancybox({
+		'autoWidth' : true,
+		'minWidth': 200,
+		'padding': 0,
+		helpers: {
+	        media: {}
+        }
+	});
+
 });

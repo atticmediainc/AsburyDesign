@@ -1,0 +1,1 @@
+$j=jQuery.noConflict(),$j(document).ready(function(){$j(".bxslider").bxSlider({auto:!0,pause:6e3,speed:1500,responsive:!0,mode:"fade",pager:!0,controls:!1,autoHover:!0,autoDelay:500}),$j(".fancybox").fancybox({autoWidth:!0,minWidth:200,padding:0,helpers:{media:{}}})});

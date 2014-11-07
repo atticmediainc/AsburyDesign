@@ -41,7 +41,7 @@ get_header(); ?>
 								<?php $order = get_field( "category_menu_order" ); ?>
 								
 								<?php if ($cat_name == "branding") : ?>
-								<li id="<?php echo $cat_name; ?>"><a href='<?php echo $cat_url ?>'><?php the_title(); ?> & Corporate Identity</a></li>
+								<li id="<?php echo $cat_name; ?>"><a href='<?php echo $cat_url ?>'><?php the_title(); ?> &amp; Corporate Identity</a></li>
 								<?php else : ?>
 								<li id="<?php echo $cat_name; ?>"><a href='<?php echo $cat_url ?>'><?php the_title(); ?></a></li>
 								<?php endif; ?>

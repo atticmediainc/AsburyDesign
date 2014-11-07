@@ -31,7 +31,7 @@ if (!function_exists('navScript')) {
 	function loadCSS() {	
 		if (!is_admin()) {
 
-			if (is_page('portfolio') || is_category()) {
+			if (is_page('portfolio') || is_category() || is_front_page()) {
 				wp_register_style( 'fancybox', get_stylesheet_directory_uri() . '/css/jquery.fancybox.css' );
 				wp_enqueue_style( 'fancybox' );
 			}
@@ -52,6 +52,10 @@ if (!function_exists('navScript')) {
 				wp_enqueue_script( 'bxslider' );
 				wp_register_script( 'slider', get_stylesheet_directory_uri() . '/js/slider.js', array( 'jquery' ) );
 				wp_enqueue_script( 'slider' );
+				wp_register_script( 'fancybox', get_stylesheet_directory_uri() . '/js/jquery.fancybox.pack.js', array( 'jquery' ) );
+				wp_enqueue_script( 'fancybox' );
+				wp_register_script( 'fancybox-helpers', get_stylesheet_directory_uri() . '/js/jquery.fancybox-media.js', array( 'jquery' ) );
+				wp_enqueue_script( 'fancybox-helpers' );
 			}
 			
 			if (is_page('portfolio') || is_category()) {

@@ -51,6 +51,35 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 			<?php the_content(); ?>
+			<div id="home-featured">
+				<?php $loop = new WP_Query( array( 
+											'category_name' => 'front-page', 
+											'posts_per_page' => 3,
+											'order' => 'ASC' ) ); ?>
+				
+				<?php if ($loop) : ?>
+				<?php $count = count($loop); ?>
+				<?php $index = 1; ?>
+				<ul>
+				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<li <?php if($index == 3) echo "class='last'"; $index++; ?>>
+						<?php if (in_category(12)) : // if a video project link to vimeo URL ?>
+						<a href="<?php the_field('vimeo_url'); ?>" class="fancybox">
+						<?php else : ?>
+						<?php $featured_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+						<a href="<?php echo $featured_url; ?>" class="fancybox">
+						<?php endif; ?>
+						<?php $thumbnail = get_field('portfolio_thumbnail'); ?>
+						<?php if ($thumbnail) : ?>
+						<img src="<?php echo $thumbnail; ?>" />
+						<?php endif; ?>
+						</a>
+					</li>
+				<?php endwhile; ?>
+				</ul>
+				<?php endif; ?>
+				<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
+			</div>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 </div><!-- #main-container -->
