@@ -392,8 +392,7 @@ body.home {
 		
 		.slide-content {
 			padding: 15px 0;
-			background: #555555;
-			height: 100px;
+			// height: 100px;
 			text-align: left;
 			position: relative;
 			bottom: -150px;
@@ -421,10 +420,9 @@ body.home {
 			
 			p {
 				font-family: @SackersGothicMedium, sans-serif;
-				font-size: 22px;
+				font-size: 16px;
 				color: #fff;
 				margin: 2px 0 0;
-				text-align: left;
 				line-height: 22px;
 				text-transform: uppercase;
 				letter-spacing: 1px;
@@ -945,6 +943,14 @@ body.page-template-page-templatescontact-php {
 				}
 			}
 		}
+		#slideshow-wrapper {
+			margin-bottom: 0;
+		}
+		.slider-img {
+			.slide-content {
+				display: none;
+			}
+		}
 	}
 	// CONTACT PAGE
 	body.page-template-page-templatescontact-php {
@@ -1091,11 +1097,10 @@ body.page-template-page-templatescontact-php {
 			.slide-content {
 				padding: 15px;
 				position: absolute;
-				bottom: 10px;
-				margin-left: 19px;
-				text-align: left;
+				bottom: 80px;
+				margin-left: 125px;
+				text-align: center;
 				width: auto;
-				background: url('images/slider-content-bg.png') top left repeat;
 			}
 		}
 		
@@ -1234,7 +1239,7 @@ body.page-template-page-templatescontact-php {
 			height: 500px;
 			
 			.slide-content {
-				bottom: 50px;
+				bottom: 115px;
 			}
 		}
 		#home-featured {

@@ -338,8 +338,6 @@ body.home .slider-img .wrap {
 }
 body.home .slider-img .slide-content {
   padding: 15px 0;
-  background: #555555;
-  height: 100px;
   text-align: left;
   position: relative;
   bottom: -150px;
@@ -364,10 +362,9 @@ body.home .slider-img .slide-content .slide-title-arrow {
 }
 body.home .slider-img .slide-content p {
   font-family: 'SackersGothicW01-Medium', sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   color: #fff;
   margin: 2px 0 0;
-  text-align: left;
   line-height: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -832,6 +829,12 @@ body.page-template-page-templatescontact-php input[type="submit"] {
     max-width: none;
     margin: 0 0 25px 0;
   }
+  body.home #slideshow-wrapper {
+    margin-bottom: 0;
+  }
+  body.home .slider-img .slide-content {
+    display: none;
+  }
   body.page-template-page-templatescontact-php .entry-content {
     width: 100%;
     padding-right: 0 !important;
@@ -939,11 +942,10 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.home .slider-img .slide-content {
     padding: 15px;
     position: absolute;
-    bottom: 10px;
-    margin-left: 19px;
-    text-align: left;
+    bottom: 80px;
+    margin-left: 125px;
+    text-align: center;
     width: auto;
-    background: url('images/slider-content-bg.png') top left repeat;
   }
   body.home .bx-controls {
     display: block;
@@ -1078,7 +1080,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
     height: 500px;
   }
   body.home .slider-img .slide-content {
-    bottom: 50px;
+    bottom: 115px;
   }
   body.home #home-featured ul li {
     width: 30%;
