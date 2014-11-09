@@ -443,8 +443,8 @@ body.home #home-featured ul li {
   height: 225px;
   overflow: hidden;
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0.65\'/></filter></svg>#grayscale");
-  filter: grayscale(0.65);
-  -webkit-filter: grayscale(0.65);
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
   -webkit-transform: translateZ(0);
   /* this is the magic line! */
 
