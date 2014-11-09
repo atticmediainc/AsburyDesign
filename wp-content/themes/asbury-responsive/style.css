@@ -37,8 +37,10 @@ ul.nav-menu {
 .clearfix:after {
   content: " ";
   /* 1 */
+
   display: table;
   /* 2 */
+
 }
 .clearfix:after {
   clear: both;
@@ -279,6 +281,7 @@ body {
 .contact-tel {
   color: #555;
   /* targets smartphones that convert telephone to link automatically */
+
 }
 .contact-tel a {
   color: #555;
@@ -444,6 +447,7 @@ body.home #home-featured ul li {
   -webkit-filter: grayscale(0.65);
   -webkit-transform: translateZ(0);
   /* this is the magic line! */
+
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -485,6 +489,7 @@ body.category {
 	.fancybox-inner {
 		width: 300px !important;
 	}*/
+
 }
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
@@ -954,12 +959,13 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.page-template-page-templatesportfolio-page-php,
   body.category {
     /*.fancybox-opened {
-			width: auto !important;
-		}
-		
-		.fancybox-inner {
-			width: auto !important;
-		}*/
+  			width: auto !important;
+  		}
+  		
+  		.fancybox-inner {
+  			width: auto !important;
+  		}*/
+  
   }
   body.page-template-page-templatesportfolio-page-php .hentry,
   body.category .hentry {
@@ -1130,8 +1136,15 @@ body.page-template-page-templatescontact-php input[type="submit"] {
     max-width: 1200px;
   }
   .footer-container {
-    width: 1050px;
+    width: 1435px;
     margin: 0 auto;
+    margin-left: -115px;
+    margin-bottom: 40px;
+    background-color: #f5f5f5;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
   .footer-widget {
     margin-right: 98px;
@@ -1224,6 +1237,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
 .ie7 .footer-container {
   width: 1050px;
   margin: 0 auto;
+  background-color: #f5f5f5;
 }
 .ie8 .featured-image,
 .ie7 .featured-image {
