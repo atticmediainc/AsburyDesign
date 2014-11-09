@@ -26,6 +26,7 @@ get_header(); ?>
 						$value = get_field('project_type');
 						$label = $field['choices'][ $value ];
 						$link = site_url() . '/portfolio/' . $value;
+						$color = get_field('text_color');
 						?>
 
 						<!-- Get the project type from custom field value -->
@@ -34,8 +35,8 @@ get_header(); ?>
 						<div class="slider-img" <?php set_slide_bg($feat_image); ?>>
 							<div class="wrap">
 								<a href="<?php echo $link; ?>"><div class="slide-content">
-									<h4><?php echo $label; ?></h4>
-									<p><?php the_title(); ?></p>
+									<h4 style="color:<?php echo $color; ?>;"><?php echo $label; ?></h4>
+									<p style="color:<?php echo $color; ?>;"><?php the_title(); ?></p>
 								</div></a>
 							</div>
 						</div>
