@@ -37,8 +37,10 @@ ul.nav-menu {
 .clearfix:after {
   content: " ";
   /* 1 */
+
   display: table;
   /* 2 */
+
 }
 .clearfix:after {
   clear: both;
@@ -282,6 +284,7 @@ body {
 .contact-tel {
   color: #555;
   /* targets smartphones that convert telephone to link automatically */
+
 }
 .contact-tel a {
   color: #555;
@@ -449,6 +452,7 @@ body.home #home-featured ul li {
   -webkit-filter: grayscale(1);
   -webkit-transform: translateZ(0);
   /* this is the magic line! */
+
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -472,7 +476,6 @@ body.home #home-featured ul li .featured-thumb {
   margin-bottom: 15px;
 }
 body.home #home-featured ul li .featured-info span {
-  font-style: italic;
   font-family: 'Adobe Garamond W01 It';
   text-transform: none;
   font-size: 1.2rem;
@@ -506,6 +509,7 @@ body.category {
 	.fancybox-inner {
 		width: 300px !important;
 	}*/
+
 }
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
@@ -755,7 +759,8 @@ body.page-id-12 .entry-content p:first-of-type {
   display: inline-block;
   margin: 10px 12px 10px 0;
   font-family: 'Adobe Garamond W01 It';
-  font-size: 17px;
+  font-size: 15px;
+  color: #757575;
 }
 #about-team-nav li img.thumb {
   -webkit-filter: grayscale(100%);
@@ -785,7 +790,7 @@ body.page-id-12 .entry-content p:first-of-type {
 }
 #about-team-nav h3 {
   font-family: 'SackersGothicW01-Heavy';
-  font-size: 15px;
+  font-size: 12px;
   margin-bottom: 0;
   margin-top: 13px;
   font-weight: normal;
@@ -975,12 +980,13 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.page-template-page-templatesportfolio-page-php,
   body.category {
     /*.fancybox-opened {
-			width: auto !important;
-		}
-		
-		.fancybox-inner {
-			width: auto !important;
-		}*/
+  			width: auto !important;
+  		}
+  		
+  		.fancybox-inner {
+  			width: auto !important;
+  		}*/
+  
   }
   body.page-template-page-templatesportfolio-page-php .hentry,
   body.category .hentry {
