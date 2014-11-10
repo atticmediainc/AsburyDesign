@@ -37,10 +37,8 @@ ul.nav-menu {
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -233,12 +231,11 @@ body {
   text-decoration: underline;
 }
 .site-footer {
-  max-width: 300px;
-  margin: 0 auto;
+  width: 100%;
   margin-top: 25px;
   border-top: 1px solid #D5D5D5;
+  background-color: #f5f5f5;
   padding-top: 20px;
-  background: none;
   border-top: none;
   text-align: center;
   color: #555;
@@ -254,6 +251,10 @@ body {
 }
 .site-footer .widget-last {
   margin-right: 0;
+}
+.footer-container {
+  max-width: 300px;
+  margin: 0 auto;
 }
 .footer-widget {
   display: inline-block;
@@ -281,7 +282,6 @@ body {
 .contact-tel {
   color: #555;
   /* targets smartphones that convert telephone to link automatically */
-
 }
 .contact-tel a {
   color: #555;
@@ -438,16 +438,17 @@ body.home #home-featured ul {
 body.home #home-featured ul li {
   display: inline-block;
   width: 32%;
+  vertical-align: top;
+  font-family: 'SackersGothicW01-Heavy';
+  text-transform: uppercase;
   margin-right: 25px;
   max-width: 325px;
-  height: 225px;
   overflow: hidden;
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0.65\'/></filter></svg>#grayscale");
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
   -webkit-transform: translateZ(0);
   /* this is the magic line! */
-
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -459,6 +460,22 @@ body.home #home-featured ul li a {
   display: block;
   width: 100%;
   height: 100%;
+  color: #555555;
+}
+body.home #home-featured ul li a:hover {
+  text-decoration: none;
+  color: #555555;
+}
+body.home #home-featured ul li .featured-thumb {
+  height: 225px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+body.home #home-featured ul li .featured-info span {
+  font-style: italic;
+  font-family: 'Adobe Garamond W01 It';
+  text-transform: none;
+  font-size: 1.2rem;
 }
 body.home #home-featured ul li img {
   display: block;
@@ -489,7 +506,6 @@ body.category {
 	.fancybox-inner {
 		width: 300px !important;
 	}*/
-
 }
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
@@ -914,7 +930,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   .entry-content {
     max-width: none;
   }
-  .site-footer {
+  .footer-container {
     max-width: 700px;
   }
   .footer-widget {
@@ -959,13 +975,12 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.page-template-page-templatesportfolio-page-php,
   body.category {
     /*.fancybox-opened {
-  			width: auto !important;
-  		}
-  		
-  		.fancybox-inner {
-  			width: auto !important;
-  		}*/
-  
+			width: auto !important;
+		}
+		
+		.fancybox-inner {
+			width: auto !important;
+		}*/
   }
   body.page-template-page-templatesportfolio-page-php .hentry,
   body.category .hentry {
@@ -1060,7 +1075,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   #main #main-container {
     max-width: 940px;
   }
-  .site-footer {
+  .footer-container {
     max-width: 940px;
   }
   .full-width-image img.size-full,
@@ -1134,9 +1149,12 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   }
   .site-footer {
     max-width: 1200px;
+    margin: 0 auto;
+    background: none;
   }
   .footer-container {
     width: 1435px;
+    max-width: none;
     margin: 0 auto;
     margin-left: -115px;
     margin-bottom: 40px;
@@ -1154,7 +1172,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
     width: 32%;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 1500px) {
   body.home .slider-img {
     background-size: 2000px auto !important;
     width: 100% !important;
@@ -1237,7 +1255,6 @@ body.page-template-page-templatescontact-php input[type="submit"] {
 .ie7 .footer-container {
   width: 1050px;
   margin: 0 auto;
-  background-color: #f5f5f5;
 }
 .ie8 .featured-image,
 .ie7 .featured-image {

@@ -18,7 +18,7 @@
 
 /** The name of the database for WordPress */
 
-define('DB_NAME', 'atticmed_asburydesign');
+define('DB_NAME', 'asburydesign');
 
 
 

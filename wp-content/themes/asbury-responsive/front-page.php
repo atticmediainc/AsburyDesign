@@ -72,7 +72,22 @@ get_header(); ?>
 						<?php endif; ?>
 						<?php $thumbnail = get_field('portfolio_thumbnail'); ?>
 						<?php if ($thumbnail) : ?>
-						<img src="<?php echo $thumbnail; ?>" />
+						<div class="featured-thumb"><img src="<?php echo $thumbnail; ?>" /></div>
+						<div class="featured-info">
+							<?php
+							$categories = get_the_category();
+							$output = '';
+							if($categories){
+								foreach($categories as $category) {
+									if ($category->cat_name != 'Front Page') {
+										$output .= '<span>' . $category->cat_name . '</span><br />';
+									}
+								}
+							echo $output;
+							}
+							?>
+							<?php the_title(); ?>
+						</div>
 						<?php endif; ?>
 						</a>
 					</li>
