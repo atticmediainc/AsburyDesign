@@ -64,12 +64,7 @@ get_header(); ?>
 							<?php $loop = new WP_Query( array( 'category_name' => 'broadcast', 'posts_per_page' => -1 ) ); ?>
 
 							<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-								<?php // get url of featured image ?>
-								<?php $featured_id = get_post_thumbnail_id(); ?>
-								<?php $featured_url = wp_get_attachment_image_src($featured_id,'full', true); ?>
-								
-								<!-- set featured image as target for fancybox, display thumbnail with content on hover -->
-								<a href="<?php echo $featured_url[0]; ?>" class="fancybox">
+								<a href="<?php the_field('vimeo_url'); ?>" class="fancybox">
 									<div <?php echo ($count == 1 ? 'class="project first"' : 'class="project"'); ?>>
 										<div class="project-thumb"><img src="<?php the_field('portfolio_thumbnail'); ?>" alt="" /></div>
 										<div class="project-popup">

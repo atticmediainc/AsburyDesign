@@ -43,7 +43,7 @@ get_header(); ?>
 								<?php if ($cat_name == "branding") : ?>
 								<li id="<?php echo $cat_name; ?>"><a href='<?php echo $cat_url ?>'><?php the_title(); ?> &amp; Corporate Identity</a></li>
 								<?php else : ?>
-								<li id="<?php echo $cat_name; ?>"><a href='<?php echo $cat_url ?>'><?php the_title(); ?></a></li>
+								<li id="<?php echo $cat_name; ?>"<?php if (strtolower($current) == $cat_name) echo " class='active-category'"; ?>><a href='<?php echo $cat_url ?>'><?php the_title(); ?></a></li>
 								<?php endif; ?>
 								
 								
@@ -64,13 +64,14 @@ get_header(); ?>
 							<?php // get url of featured image ?>
 							<?php $featured_id = get_post_thumbnail_id(); ?>
 							<?php $featured_url = wp_get_attachment_image_src($featured_id,'full', true); ?>
-							
+							<?php $popup_image = get_field('portfolio_full-size_image'); ?>
+
 							<!-- if a video project link to vimeo URL -->
 							<?php if (in_category(12)) : ?>
 							<a href="<?php the_field('vimeo_url'); ?>" class="fancybox">
 							<?php else : ?>
-							<!-- otherwise set featured image as target for fancybox -->
-							<a href="<?php echo $featured_url[0]; ?>" class="fancybox">
+							<!-- otherwise use Portfolio Full-Size Image ACF field as target for fancybox -->
+							<a href="<?php echo $popup_image; ?>" class="fancybox">
 							<?php endif; ?>
 								<div <?php echo ($count == 1 ? 'class="project first"' : 'class="project"'); ?>>
 									<div class="project-thumb"><img src="<?php the_field('portfolio_thumbnail'); ?>" alt="" /></div>

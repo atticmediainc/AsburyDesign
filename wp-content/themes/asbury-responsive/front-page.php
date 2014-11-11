@@ -68,10 +68,10 @@ get_header(); ?>
 						<?php if (in_category(12)) : // if a video project link to vimeo URL ?>
 						<a href="<?php the_field('vimeo_url'); ?>" class="fancybox">
 						<?php else : ?>
-						<?php $featured_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-						<a href="<?php echo $featured_url; ?>" class="fancybox">
+						<?php $popup_image = get_field('portfolio_full-size_image'); ?>
+						<a href="<?php echo $popup_image; ?>" class="fancybox">
 						<?php endif; ?>
-						<?php $thumbnail = get_field('portfolio_thumbnail'); ?>
+						<?php $thumbnail = get_field('front_page_content_box_thumbnail'); ?>
 						<?php if ($thumbnail) : ?>
 						<div class="featured-thumb"><img src="<?php echo $thumbnail; ?>" /></div>
 						<div class="featured-info">
