@@ -37,10 +37,8 @@ ul.nav-menu {
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -284,7 +282,6 @@ body {
 .contact-tel {
   color: #555;
   /* targets smartphones that convert telephone to link automatically */
-
 }
 .contact-tel a {
   color: #555;
@@ -453,7 +450,6 @@ body.home #home-featured ul li {
   -webkit-filter: grayscale(1);
   -webkit-transform: translateZ(0);
   /* this is the magic line! */
-
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -510,7 +506,6 @@ body.category {
 	.fancybox-inner {
 		width: 300px !important;
 	}*/
-
 }
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
@@ -924,6 +919,9 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   .navbar .nav-menu li:last-of-type a {
     padding: 15px 0 15px 10px;
   }
+  #main {
+    padding-bottom: 55px;
+  }
   #main #main-container {
     max-width: 700px;
   }
@@ -981,13 +979,12 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.page-template-page-templatesportfolio-page-php,
   body.category {
     /*.fancybox-opened {
-  			width: auto !important;
-  		}
-  		
-  		.fancybox-inner {
-  			width: auto !important;
-  		}*/
-  
+			width: auto !important;
+		}
+		
+		.fancybox-inner {
+			width: auto !important;
+		}*/
   }
   body.page-template-page-templatesportfolio-page-php .hentry,
   body.category .hentry {
@@ -1155,30 +1152,19 @@ body.page-template-page-templatescontact-php input[type="submit"] {
     width: auto;
   }
   .site-footer {
-    max-width: 1200px;
     margin: 0 auto;
-    background: none;
+    max-width: none;
   }
   .footer-container {
-    width: 1435px;
     max-width: none;
     margin: 0 auto;
-    margin-left: -115px;
-    background-color: #f5f5f5;
     padding-top: 55px;
     padding-bottom: 30px;
-    padding-left: 200px;
-    padding-right: 200px;
   }
   .footer-widget {
     margin-right: 98px;
   }
   /* Home page */
-  body.home #home-featured ul li {
-    width: 32%;
-  }
-}
-@media (min-width: 1500px) {
   body.home .slider-img {
     background-size: 2000px auto !important;
     width: 100% !important;
@@ -1186,6 +1172,9 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   }
   body.home #slideshow-wrapper {
     background: #eeeee0 url('images/home-shadow-big.png') top left repeat-x;
+  }
+  body.home #home-featured ul li {
+    width: 32%;
   }
 }
 .ie8 .site-header,

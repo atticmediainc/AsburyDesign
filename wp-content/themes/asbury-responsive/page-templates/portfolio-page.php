@@ -61,7 +61,7 @@ get_header(); ?>
 						<!-- Show only Publication projects on the Portfolio page -->
 						<div id="project-container">
 							<?php $count = 1; ?>
-							<?php $loop = new WP_Query( array( 'category_name' => 'advertising', 'posts_per_page' => -1 ) ); ?>
+							<?php $loop = new WP_Query( array( 'category_name' => 'broadcast', 'posts_per_page' => -1 ) ); ?>
 
 							<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 								<?php // get url of featured image ?>

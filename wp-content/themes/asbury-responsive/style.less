@@ -1065,7 +1065,7 @@ body.page-template-page-templatescontact-php {
 	}
 	
 	#main {
-		
+		padding-bottom: 55px;
 		#main-container {
 			max-width: 700px;
 		}
@@ -1323,41 +1323,20 @@ body.page-template-page-templatescontact-php {
 	}
 	
 	.site-footer {
-		max-width: 1200px;
 		margin: 0 auto;
-		background: none;
+		max-width: none;
 	}
 	
 	.footer-container {
-		width: 1435px;
 		max-width: none;
 		margin: 0 auto;
-		margin-left: -115px;
-		background-color: #f5f5f5;
 		padding-top: 55px;
 		padding-bottom: 30px;
-		padding-left: 200px;
-		padding-right: 200px;
 	}
 	.footer-widget {
 		margin-right: 98px;
 	}
 	/* Home page */
-	body.home {
-		
-		#home-featured {
-			ul {
-				li {
-					width: 32%;
-				}
-			}
-		}
-	}
-}
-
-@media (min-width: 1500px) {
-	
-	// HOME PAGE
 	body.home {
 		.slider-img {
 			background-size: 2000px auto !important;
@@ -1366,6 +1345,13 @@ body.page-template-page-templatescontact-php {
 		}
 		#slideshow-wrapper {
 			background: #EEEEE0 url('images/home-shadow-big.png') top left repeat-x;
+		}
+		#home-featured {
+			ul {
+				li {
+					width: 32%;
+				}
+			}
 		}
 	}
 }
