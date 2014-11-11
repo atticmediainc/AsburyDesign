@@ -1177,6 +1177,12 @@ body.page-template-page-templatescontact-php input[type="submit"] {
     width: 32%;
   }
 }
+@media (min-width: 2000px) {
+  /* Home page */
+  body.home .slider-img {
+    background-size: 100% auto !important;
+  }
+}
 .ie8 .site-header,
 .ie7 .site-header {
   height: 175px;
