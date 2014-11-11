@@ -18265,6 +18265,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/uploads\/2014\/11\/carter.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28604,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/11\/carter.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/11\/carter.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/uploads\/2014\/11\/miami.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

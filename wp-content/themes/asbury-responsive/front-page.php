@@ -18,7 +18,8 @@ get_header(); ?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<div>
 						<!-- Get slide image -->
-						<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+						<?php $slide_url = get_field('slide_image'); ?>
+						
 						
 						<!-- Construct URL using ACF select field -->
 						<?php
@@ -32,7 +33,7 @@ get_header(); ?>
 						<!-- Get the project type from custom field value -->
 						<?php $project_field = get_post_meta(get_the_ID(), 'slideshow_project', true); ?>
 						
-						<div class="slider-img" <?php set_slide_bg($feat_image); ?>>
+						<div class="slider-img" <?php set_slide_bg($slide_url); ?>>
 							<div class="wrap">
 								<a href="<?php echo $link; ?>"><div class="slide-content">
 									<h4 style="color:<?php echo $color; ?>;"><?php echo $label; ?></h4>
