@@ -143,3 +143,50 @@ function widget_first_last_classes($params) {
 
 }
 add_filter('dynamic_sidebar_params','widget_first_last_classes');
+
+//----------------------------------------------------------------
+// Custom Post Types
+//----------------------------------------------------------------
+function create_cpt() {
+  	register_post_type( 'homepage_slides', 
+	    array(
+	      'public' => true,
+	      'has_archive' => false,
+	      'menu_position' => 5, // places menu item directly below Posts
+	      'menu_icon' => '', // leaving this blank gives the post type the "wp-menu-image" class and allows you to set its icon below
+	      'labels' => array(
+	        'name' => __( 'Homepage Slides' ),
+	        'singular_name' => __( 'Homepage Slide' ),
+	        'add_new' => __( 'Add New' ),
+	        'add_new_item' => __( 'Add New Homepage Slide' ),
+	        'edit' => __( 'Edit' ),
+	        'edit_item' => __( 'Edit Homepage Slide' ),
+	        'new_item' => __( 'New Homepage Slide' ),
+	        'view' => __( 'View Homepage Slide' ),
+	        'view_item' => __( 'View Homepage Slide' ),
+	        'search_items' => __( 'Search Homepage Slide' ),
+	        'not_found' => __( 'No Homepage Slides found' ),
+	        'not_found_in_trash' => __( 'No Homepage Slides found in Trash' ),
+	        'parent' => __( 'Parent Homepage Slide' ),
+	        ),
+	      'supports' => array('title', 'thumbnail', 'custom-fields'),
+	    )
+	  );
+}
+add_action( 'init', 'create_cpt' );
+
+//-------------------------------------------------------------------------------------------------------------
+// Add sidebar menu icon to custom post type above (get CSS code from: http://melchoyce.github.io/dashicons/)
+//-------------------------------------------------------------------------------------------------------------
+function add_menu_icons_styles(){
+?>
+
+<style>
+#adminmenu .menu-icon-homepage_slides div.wp-menu-image:before {
+	content: "\f233";
+}
+</style>
+
+<?php
+}
+add_action( 'admin_head', 'add_menu_icons_styles' );

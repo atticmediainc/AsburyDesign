@@ -10,7 +10,8 @@ get_header(); ?>
 		<div id="slideshow">
 			<div class="bxslider">
 				<?php $loop = new WP_Query( array( 
-											'category_name' => 'slideshow-image', 
+											'post_type' => 'homepage_slides', 
+											'posts_per_page' => -1,
 											'meta_key'		=> 'slide_order',
 											'orderby'		=> 'meta_value_num', 
 											'order' => 'ASC' ) ); ?>
