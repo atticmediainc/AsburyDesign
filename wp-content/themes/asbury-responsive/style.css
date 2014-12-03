@@ -37,8 +37,10 @@ ul.nav-menu {
 .clearfix:after {
   content: " ";
   /* 1 */
+
   display: table;
   /* 2 */
+
 }
 .clearfix:after {
   clear: both;
@@ -282,6 +284,7 @@ body {
 .contact-tel {
   color: #555;
   /* targets smartphones that convert telephone to link automatically */
+
 }
 .contact-tel a {
   color: #555;
@@ -450,6 +453,7 @@ body.home #home-featured ul li {
   -webkit-filter: grayscale(1);
   -webkit-transform: translateZ(0);
   /* this is the magic line! */
+
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -506,6 +510,7 @@ body.category {
 	.fancybox-inner {
 		width: 300px !important;
 	}*/
+
 }
 body.page-template-page-templatesportfolio-page-php #current-page,
 body.category #current-page {
@@ -902,7 +907,7 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   }
   .navbar .nav-menu li a {
     font-family: 'SackersGothicW01-Heavy', Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     text-align: left;
@@ -979,12 +984,13 @@ body.page-template-page-templatescontact-php input[type="submit"] {
   body.page-template-page-templatesportfolio-page-php,
   body.category {
     /*.fancybox-opened {
-			width: auto !important;
-		}
-		
-		.fancybox-inner {
-			width: auto !important;
-		}*/
+  			width: auto !important;
+  		}
+  		
+  		.fancybox-inner {
+  			width: auto !important;
+  		}*/
+  
   }
   body.page-template-page-templatesportfolio-page-php .hentry,
   body.category .hentry {
